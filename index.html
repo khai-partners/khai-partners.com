@@ -98,11 +98,11 @@
 </style>
 <style id="khai-splash-style">
 #khai-splash{position:fixed;inset:0;z-index:100000;display:flex;align-items:center;justify-content:center;background:#fff;
-  animation:khaiSplashOut .7s ease 3s forwards;cursor:pointer}
+  animation:khaiSplashOut .5s ease 1s forwards;cursor:pointer}
 #khai-splash img{width:min(340px,64vw);height:auto;opacity:0;transform:scale(.86);
-  animation:khaiLogoIn 1s cubic-bezier(.2,.7,.2,1) .15s forwards}
+  animation:khaiLogoIn .5s cubic-bezier(.2,.7,.2,1) .05s forwards}
 #khai-splash .line{position:absolute;left:50%;bottom:calc(50% - min(110px,22vw));width:0;height:1px;background:#b1976b;transform:translateX(-50%);
-  animation:khaiLine 1.6s ease .7s forwards}
+  animation:khaiLine .6s ease .3s forwards}
 @keyframes khaiLogoIn{to{opacity:1;transform:scale(1)}}
 @keyframes khaiLine{to{width:min(220px,44vw)}}
 @keyframes khaiSplashOut{to{opacity:0;visibility:hidden}}
@@ -138,7 +138,7 @@
 <script>(function(){var s=document.getElementById('khai-splash');if(!s)return;
 function gone(){if(s&&s.parentNode){s.parentNode.removeChild(s);}}
 s.addEventListener('click',function(){s.classList.add('skip');setTimeout(gone,450);});
-setTimeout(gone,3900);})();</script>
+setTimeout(gone,1600);})();</script>
     <div class="body-wrapper float-menu" data-home="index.html">
         <header class="gdlr-header-wrapper">
             <!-- top navigation -->
