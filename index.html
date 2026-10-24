@@ -109,6 +109,28 @@
 #khai-splash.skip{animation:khaiSplashOut .4s ease forwards}
 @media (prefers-reduced-motion:reduce){#khai-splash img{opacity:1;transform:none;animation:none}#khai-splash .line{display:none}}
 </style>
+<style id="khai-mobile-hero-style">
+.khai-mhero{display:none}
+@media only screen and (max-width: 1023px){
+  #content-section-1 .gdlr-master-slider-item{display:none !important}
+  .khai-mhero{display:block;position:relative;overflow:hidden;color:#fff;text-align:center;font-family:"Open Sans",Arial,sans-serif;
+    background:#2a241e url(upload/slider-1.jpg) center top/cover no-repeat}
+  .khai-mhero:before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(20,16,12,.55),rgba(20,16,12,.35) 45%,rgba(20,16,12,.75))}
+  .khai-mhero-inner{position:relative;padding:44px 22px 0}
+  .khai-mhero .wel{font-size:17px;letter-spacing:3px;text-transform:uppercase;color:#d2bd98;margin:0}
+  .khai-mhero .bar{display:block;width:64px;height:1px;background:#d2bd98;margin:10px auto 14px}
+  .khai-mhero h1{font-family:"Open Sans",Arial,sans-serif;font-weight:700;color:#fff;font-size:30px;line-height:1.15;letter-spacing:2px;margin:0;text-transform:uppercase}
+  .khai-mhero h1 span{display:block;font-size:22px;letter-spacing:6px;margin-top:6px}
+  .khai-mhero p.lede{font-size:15px;line-height:1.7;color:rgba(255,255,255,.92);margin:16px auto 22px;max-width:30em}
+  .khai-mhero .cta{display:inline-block;background:#ae9468;color:#fff;font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:13px 22px;text-decoration:none}
+  .khai-mhero .photo{position:relative;margin:30px auto 0;width:74%;max-width:300px}
+  .khai-mhero .photo img{display:block;width:100%;height:auto;-webkit-mask-image:linear-gradient(#000 78%,transparent);mask-image:linear-gradient(#000 78%,transparent)}
+  .khai-mhero .who{position:relative;margin-top:-34px;padding-bottom:30px}
+  .khai-mhero .who strong{display:block;font-size:20px;letter-spacing:2px;font-weight:700}
+  .khai-mhero .who em{display:block;font-style:normal;font-size:13px;color:rgba(255,255,255,.85);margin-top:2px}
+  .khai-mhero .who b{display:block;font-size:13px;color:#c9ad7f;letter-spacing:1px;font-weight:600;margin-top:4px}
+}
+</style>
 </head>
 
 <body data-rsssl="1" class="home page-template-default page page-id-3928 _masterslider _msp_version_3.4.5">
@@ -236,6 +258,16 @@ setTimeout(gone,3900);})();</script>
                 <div class="with-sidebar-wrapper">
                     <section id="content-section-1">
                         <div class="gdlr-full-size-wrapper gdlr-show-all" style="padding-bottom: 0px; background-color: #ffffff;">
+                            <div class="khai-mhero">
+  <div class="khai-mhero-inner">
+    <p class="wel">Welcome to</p><span class="bar"></span>
+    <h1>Khai &amp; Partners<span>Law Firm</span></h1>
+    <p class="lede">An Indonesian law firm headquartered in Balikpapan, East Kalimantan, where counsel is rendered with the precision of doctrine and the candour a client is owed.</p>
+    <a class="cta" href="contact-page.html">Contact Now</a>
+    <div class="photo"><img src="upload/khairul-anam-hero.webp" alt="Khairul Anam, Managing Partner" width="529" height="950"></div>
+    <div class="who"><strong>KHAIRUL ANAM</strong><em>S.H., S.Tr.Par., M.Par., M.H.</em><b>Managing Partner</b></div>
+  </div>
+</div>
                             <div class="gdlr-master-slider-item gdlr-slider-item gdlr-item" style="margin-bottom: 0px;">
 
                                 <div id=rev_slider_1_1_wrapper class="rev_slider_wrapper fullwidthbanner-container" data-source=gallery style="margin:0px auto;background:#202020;padding:0px;margin-top:0px;margin-bottom:0px;">
@@ -356,7 +388,7 @@ setTimeout(gone,3900);})();</script>
                                                     data-x="left"
                                                     data-hoffset="90"
                                                     data-y="center"
-                                                    data-voffset="150"
+                                                    data-voffset="182"
                                                     data-width="['auto']"
                                                     data-height="['auto']"
                                                     data-visibility="['on','on','off','off']"
