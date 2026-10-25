@@ -65,6 +65,17 @@
     }
 </style>
 
+<style id="khai-services-style">
+.khai-services{margin:10px 0 0;padding:26px 28px;background:#f7f4ee;border-left:3px solid #b1976b}
+.khai-services h3{font-size:20px;line-height:1.3;font-weight:700;color:#262626;margin:0 0 14px}
+.khai-services ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px 28px}
+.khai-services li{position:relative;padding-left:18px;margin:0;font-size:16px;line-height:1.6;color:#3e3e3e}
+.khai-services li:before{content:"";position:absolute;left:0;top:.7em;width:7px;height:7px;background:#b1976b;transform:rotate(45deg)}
+@media (max-width:767px){.khai-services{padding:22px 18px}.khai-services ul{grid-template-columns:1fr}}
+</style>
+<style id="khai-disclaimer-style">
+.khai-disclaimer{clear:both;max-width:1140px;margin:0 auto;padding:0 15px 14px;font-size:12px;line-height:1.5;color:rgba(255,255,255,.55);text-align:center}
+</style>
 </head>
 
 <body data-rsssl="1" class="home page-template-default page page-id-3928 _masterslider _msp_version_3.4.5">
@@ -216,6 +227,15 @@
 </p>
 </div>
 
+                                            <div class="khai-services">
+    <h3>Key services</h3>
+    <ul>
+        <li>Licences, permits and approvals</li>
+        <li>Challenges before the State Administrative Court (PTUN)</li>
+        <li>Regulatory sanctions</li>
+        <li>Good-governance compliance</li>
+    </ul>
+</div>
                                             <div class="gdlr-space" style="margin-bottom: 50px;"></div>
                                             <div class="clear"></div>
                                         </div>
@@ -311,41 +331,22 @@
 
 <script>
 (function () {
-    const totalPages = 16;
+    const pages = [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
+    const totalPages = pages.length;
     const filename = window.location.pathname.split("/").pop();
     const match = /^single-practice(\d+)\.html$/i.exec(filename);
-
     const navigation = document.querySelector(".khai-practice-navigation");
-
-    if (!match) {
-        navigation.hidden = true;
+    const idx = match ? pages.indexOf(Number(match[1])) : -1;
+    if (idx === -1) {
         navigation.style.display = "none";
         return;
     }
-
-    const currentPage = Number(match[1]);
-
-    if (currentPage < 1 || currentPage > totalPages) {
-        navigation.style.display = "none";
-        return;
-    }
-
-    const previousPage = currentPage === 1
-        ? totalPages
-        : currentPage - 1;
-
-    const nextPage = currentPage === totalPages
-        ? 1
-        : currentPage + 1;
-
     document.getElementById("khai-practice-prev").href =
-        "single-practice" + previousPage + ".html";
-
+        "single-practice" + pages[(idx - 1 + totalPages) % totalPages] + ".html";
     document.getElementById("khai-practice-next").href =
-        "single-practice" + nextPage + ".html";
-
+        "single-practice" + pages[(idx + 1) % totalPages] + ".html";
     document.getElementById("khai-practice-counter").textContent =
-        currentPage + " / " + totalPages;
+        (idx + 1) + " / " + totalPages;
 })();
 </script>
 
@@ -452,6 +453,7 @@ Provinsi Kalimantan Timur 76115
                     </div>
                     <div class="clear"></div>
                 </div>
+                <div class="khai-disclaimer">This website provides general information and does not constitute legal advice.</div>
             </div>
         </footer>
     </div>
