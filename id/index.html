@@ -1,0 +1,1498 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html class="ie ie7 ltie8 ltie9" lang="en-US"><![endif]-->
+<!--[if IE 8]><html class="ie ie8 ltie9" lang="en-US"><![endif]-->
+<!--[if !(IE 7) | !(IE 8)]><!-->
+<html lang="id">
+<!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0" />
+
+    <title>Khai &amp; Partners – Kantor Hukum</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+
+    <link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="../js/plugins/superfish/css/superfish.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="../js/plugins/dl-menu/component.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="../js/plugins/font-awesome-new/css/font-awesome.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="../js/plugins/fancybox/jquery.fancybox.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="../js/plugins/flexslider/flexslider.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="../css/style-responsive.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="../css/style-custom.css" type="text/css" media="all" />
+    <link rel="stylesheet" href='../js/plugins/revslider/public/assets/css/settings.css' type=text/css media=all>
+
+    <style>
+    @media (max-width: 767px) {
+        /* Sembunyikan menu hamburger */
+        .gdlr-header-wrapper .gdlr-responsive-navigation {
+            display: none !important;
+        }
+
+        /* Tampilkan navigasi desktop di HP */
+        .gdlr-header-wrapper .gdlr-navigation-wrapper {
+            display: block !important;
+            float: none !important;
+            width: 100%;
+            clear: both;
+            padding: 10px 0;
+        }
+
+        .gdlr-header-wrapper #gdlr-main-navigation {
+            display: block !important;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .gdlr-header-wrapper #menu-main-menu-1 {
+            display: flex !important;
+            justify-content: center;
+            width: max-content;
+            min-width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .gdlr-header-wrapper #menu-main-menu-1 > li {
+            float: none !important;
+            flex: 0 0 auto;
+        }
+
+        .gdlr-header-wrapper #menu-main-menu-1 > li > a {
+            padding: 12px 10px !important;
+            font-size: 11px !important;
+            white-space: nowrap;
+        }
+        
+        /* Meet Our Lawyers: satu kolom di HP */
+@media (max-width: 767px) {
+    #content-section-6 .gdlr-attorney-carousel-item {
+        width: auto !important;
+        min-width: 0 !important;
+    }
+
+    #content-section-6 .gdlr-attorney-carousel-item > .attorney-item-holder {
+        display: flex !important;
+        flex-direction: column;
+        gap: 40px;
+        width: 100% !important;
+        transform: none !important;
+    }
+
+    #content-section-6 .gdlr-attorney-item {
+        float: none !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+        box-sizing: border-box;
+    }
+
+    #content-section-6 .gdlr-attorney-thumbnail img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+    }
+</style>
+<style id="khai-splash-style">
+#khai-splash{position:fixed;inset:0;z-index:100000;display:flex;align-items:center;justify-content:center;background:#fff;
+  animation:khaiSplashOut .5s ease 1s forwards;cursor:pointer}
+#khai-splash img{width:min(340px,64vw);height:auto;opacity:0;transform:scale(.86);
+  animation:khaiLogoIn .5s cubic-bezier(.2,.7,.2,1) .05s forwards}
+#khai-splash .line{position:absolute;left:50%;bottom:calc(50% - min(110px,22vw));width:0;height:1px;background:#b1976b;transform:translateX(-50%);
+  animation:khaiLine .6s ease .3s forwards}
+@keyframes khaiLogoIn{to{opacity:1;transform:scale(1)}}
+@keyframes khaiLine{to{width:min(220px,44vw)}}
+@keyframes khaiSplashOut{to{opacity:0;visibility:hidden}}
+#khai-splash.skip{animation:khaiSplashOut .4s ease forwards}
+@media (prefers-reduced-motion:reduce){#khai-splash img{opacity:1;transform:none;animation:none}#khai-splash .line{display:none}}
+</style>
+<style id="khai-mobile-hero-style">
+.khai-mhero{display:none}
+@media only screen and (max-width: 1023px){
+  #content-section-1 .gdlr-master-slider-item{display:none !important}
+  .khai-mhero{display:block;position:relative;overflow:hidden;color:#fff;text-align:center;font-family:"Open Sans",Arial,sans-serif;
+    background:#2a241e url(../upload/slider-1.jpg) center top/cover no-repeat}
+  .khai-mhero:before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(20,16,12,.55),rgba(20,16,12,.35) 45%,rgba(20,16,12,.75))}
+  .khai-mhero-inner{position:relative;padding:44px 22px 0}
+  .khai-mhero .wel{font-size:17px;letter-spacing:3px;text-transform:uppercase;color:#d2bd98;margin:0}
+  .khai-mhero .bar{display:block;width:64px;height:1px;background:#d2bd98;margin:10px auto 14px}
+  .khai-mhero h1{font-family:"Open Sans",Arial,sans-serif;font-weight:700;color:#fff;font-size:30px;line-height:1.15;letter-spacing:2px;margin:0;text-transform:uppercase}
+  .khai-mhero h1 span{display:block;font-size:22px;letter-spacing:6px;margin-top:6px}
+  .khai-mhero p.lede{font-size:15px;line-height:1.7;color:rgba(255,255,255,.92);margin:16px auto 22px;max-width:30em}
+  .khai-mhero .cta{display:inline-block;background:#ae9468;color:#fff;font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:13px 22px;text-decoration:none}
+  .khai-mhero .photo{position:relative;margin:30px auto 0;width:74%;max-width:300px}
+  .khai-mhero .photo img{display:block;width:100%;height:auto;-webkit-mask-image:linear-gradient(#000 78%,transparent);mask-image:linear-gradient(#000 78%,transparent)}
+  .khai-mhero .who{position:relative;margin-top:-34px;padding-bottom:30px;line-height:1.25}
+  .khai-mhero .who strong{display:block;font-size:20px;line-height:1.25;letter-spacing:2px;font-weight:700;margin:0}
+  .khai-mhero .who em{display:block;font-style:normal;font-size:13px;line-height:1.25;color:rgba(255,255,255,.85);margin:0}
+  .khai-mhero .who b{display:block;font-size:13px;line-height:1.25;color:#c9ad7f;letter-spacing:1px;font-weight:600;margin:0}
+}
+</style>
+<style id="khai-section2-style">
+#content-section-2 .gdlr-left-service-title{font-weight:700;font-size:28px;line-height:1.3;letter-spacing:.2px}
+#content-section-2 .gdlr-left-service-title .khai-sub{display:block;margin-top:8px;font-size:14px;font-weight:600;line-height:1.4;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.82)}
+#content-section-2 .gdlr-left-service-content p{line-height:1.8}
+@media only screen and (max-width: 767px){
+  #content-section-2 .gdlr-half-left .half-container{max-width:none !important;padding:0 24px}
+  #content-section-2 .gdlr-service-half-background-left-head{display:block;margin-bottom:18px}
+  #content-section-2 .service-half-background-icon{display:block;font-size:28px;line-height:1;margin:0 0 16px;padding:0}
+  #content-section-2 .gdlr-left-service-title{display:block;font-size:24px;line-height:1.3;padding:0}
+  #content-section-2 .gdlr-left-service-title .khai-sub{font-size:12px;margin-top:10px}
+  #content-section-2 .gdlr-left-service-content p{text-align:left !important;font-size:15px;line-height:1.75;margin:0}
+}
+</style>
+<style id="khai-practice-click-style">
+.gdlr-modern-practice .gdlr-practice-thumbnail .practice-title{top:0;bottom:0;margin:0;display:flex;align-items:center;justify-content:center;z-index:2}
+.gdlr-modern-practice .gdlr-practice-thumbnail .practice-title a{display:flex;align-items:center;justify-content:center;width:100%;height:100%;padding:0 16px;box-sizing:border-box;-webkit-tap-highlight-color:rgba(255,255,255,.12)}
+</style>
+<style id="khai-practice-image-style">
+.gdlr-modern-practice .gdlr-practice-thumbnail img{width:100%;height:auto;display:block}
+.gdlr-modern-practice .gdlr-practice-thumbnail .gdlr-practice-thumbnail-overlay{opacity:0!important;background:#0b1424!important;transition:opacity .25s}
+.gdlr-modern-practice .gdlr-practice-thumbnail:hover .gdlr-practice-thumbnail-overlay{opacity:.18!important}
+.khai-vh{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+</style>
+<style id="khai-disclaimer-style">
+.khai-disclaimer{clear:both;max-width:1140px;margin:0 auto;padding:0 15px 14px;font-size:12px;line-height:1.5;color:rgba(255,255,255,.55);text-align:center}
+</style>
+<link rel="alternate" hreflang="en" href="https://khai-partners.com/" />
+<link rel="alternate" hreflang="id" href="https://khai-partners.com/id/" />
+<link rel="alternate" hreflang="x-default" href="https://khai-partners.com/" />
+<style id="khai-lang-style">
+.gdlr-main-menu > li.khai-lang{display:flex;align-items:center;gap:6px;margin-left:14px;padding-left:16px;border-left:1px solid rgba(0,0,0,.15)}
+.gdlr-main-menu > li.khai-lang > a{display:inline-block!important;padding:0 2px!important;font-weight:600;opacity:.55;letter-spacing:1px}
+.gdlr-main-menu > li.khai-lang > a.is-active{opacity:1;color:#b1976b!important}
+.gdlr-main-menu > li.khai-lang > a:hover{opacity:1}
+.gdlr-main-menu > li.khai-lang .sep{opacity:.35}
+.khai-lang-mobile a{font-weight:600}
+@media (max-width:767px){.gdlr-header-wrapper #menu-main-menu-1 > li.khai-lang{order:-1;margin:0 4px 0 0;padding:0 10px 0 0;border-left:0;border-right:1px solid rgba(0,0,0,.15)}.gdlr-header-wrapper #menu-main-menu-1 > li.khai-lang > a{padding:12px 3px!important}}
+</style>
+</head>
+
+<body data-rsssl="1" class="home page-template-default page page-id-3928 _masterslider _msp_version_3.4.5">
+<div id="khai-splash" aria-hidden="true"><img src="../upload/logo.png" alt="" width="391" height="205"><span class="line"></span></div>
+<script>(function(){var s=document.getElementById('khai-splash');if(!s)return;
+function gone(){if(s&&s.parentNode){s.parentNode.removeChild(s);}}
+s.addEventListener('click',function(){s.classList.add('skip');setTimeout(gone,450);});
+setTimeout(gone,1600);})();</script>
+    <div class="body-wrapper float-menu" data-home="index.html">
+        <header class="gdlr-header-wrapper">
+            <!-- top navigation -->
+            <div class="top-navigation-wrapper">
+                <div class="top-navigation-container container">
+                    <div class="top-navigation-right">
+                        <div class="top-navigation-right-text">
+                            <div class="top-bar-right-text-inner">
+    <i class="fa fa-envelope-o"></i>
+    <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=lawyer%40khai-partners.com&amp;su=Permintaan%20Konsultasi&amp;body=Halo%20Khai%20%26%20Partners%2C%20saya%20ingin%20menanyakan%20perihal%20konsultasi%20hukum."
+       target="_blank"
+       rel="noopener noreferrer"
+       style="color: inherit;">
+        lawyer@khai-partners.com
+    </a>
+</div>
+                            <div class="top-bar-right-text-inner">
+    <i class="fa fa-phone"></i>
+    <a href="https://wa.me/6282355555880?text=Halo%20Khai%20%26%20Partners%2C%20saya%20ingin%20menanyakan%20perihal%20konsultasi%20hukum."
+       target="_blank"
+       rel="noopener noreferrer"
+       style="color: inherit;">
+        +62 823-5555-5880
+    </a>
+</div>
+                            
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <!-- logo -->
+            <div class="gdlr-header-inner">
+                <div class="gdlr-header-container container">
+                    <!-- logo -->
+                    <div class="gdlr-logo">
+                        <a href="index.html"> <img src="../upload/logo.png" alt="" width="391" height="205" /> </a>
+                        <div class="gdlr-responsive-navigation dl-menuwrapper" id="gdlr-responsive-navigation">
+                            <button class="dl-trigger">Buka Menu</button>
+
+                            <ul id="menu-main-menu" class="dl-menu gdlr-main-mobile-menu">
+                                <li class="menu-item"><a href="index.html">Beranda</a></li>
+                                <li class="menu-item"><a href="about-us.html">Tentang Kami</a></li>
+                                <li class="menu-item"><a href="practice-areas-modern-4-columns.html">Bidang Praktik</a></li>
+                                <li class="menu-item"><a href="attorney-4-columns.html">Tim Advokat</a></li>
+                                <li class="menu-item"><a href="careers.html">Karier</a></li>
+                                <li class="menu-item"><a href="contact-page.html">Kontak</a></li>
+                                <li class="menu-item khai-lang-mobile"><a href="../index.html" data-lang-link="en-mobile" lang="en" hreflang="en">English</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- navigation -->
+                    <div class="gdlr-navigation-wrapper">
+                        <nav class="gdlr-navigation" id="gdlr-main-navigation" role="navigation">
+                            <ul id="menu-main-menu-1" class="sf-menu gdlr-main-menu">
+                                <li
+                                    class="menu-item menu-item-home current-menu-item gdlr-normal-menu"
+                                >
+                                    <a href="index.html">Beranda</a>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-has-children-item menu-item-has-children gdlr-normal-menu"
+                                >
+                                    <a href="about-us.html" class="sf-with-ul-pre">Tentang Kami</a>
+                                    
+                                </li>
+                                <li class="menu-item menu-item-has-children-item menu-item-has-children gdlr-normal-menu" >
+                                    <a href="practice-areas-modern-4-columns.html" class="sf-with-ul-pre">Bidang Praktik</a>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-has-children-item menu-item-has-children gdlr-normal-menu"
+                                >
+                                    <a href="attorney-4-columns.html" class="sf-with-ul-pre">Tim Advokat</a>
+                                    
+                                </li>
+                                 <li
+                                    class="menu-item menu-item-has-children-item menu-item-has-children gdlr-normal-menu"
+                                >
+                                    <a href="careers.html" class="sf-with-ul-pre">Karier</a>
+                                    
+                                </li>
+                                <li
+                                    class="menu-item menu-item-has-children-item menu-item-has-children gdlr-mega-menu"
+                                >
+                                    
+                                <li
+                                    class="menu-item menu-item-has-children-item menu-item-has-children gdlr-mega-menu"
+                                >
+                                  <li class="menu-item menu-item-has-children-item menu-item-has-children gdlr-normal-menu">
+                        <a href="contact-page.html" class="sf-with-ul-pre">Kontak</a></li>
+<li class="menu-item khai-lang"><a href="../index.html" data-lang-link="en" lang="en" hreflang="en" title="English">EN</a><span class="sep">|</span><a href="index.html" data-lang-link="id" class="is-active" lang="id" hreflang="id" title="Bahasa Indonesia">ID</a></li>
+                        
+                        <div class="gdlr-menu-search" id="gdlr-menu-search">
+                            <form method="get" action="index.html">
+                                <div class="search-text">
+                                    <input type="text" value="Ketik kata kunci" name="s" autocomplete="off" data-default="Ketik kata kunci" />
+                                </div>
+                                <input type="submit" value="" />
+                                <div class="clear"></div>
+                            </form>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </header>
+
+        <div id="gdlr-header-substitute"></div>
+
+        <!-- is search -->
+        <div class="content-wrapper">
+            <div class="gdlr-content">
+                <!-- Above Sidebar Section-->
+
+                <!-- Sidebar With Content Section-->
+                <div class="with-sidebar-wrapper">
+                    <section id="content-section-1">
+                        <div class="gdlr-full-size-wrapper gdlr-show-all" style="padding-bottom: 0px; background-color: #ffffff;">
+                            <div class="khai-mhero">
+  <div class="khai-mhero-inner">
+    <p class="wel">Selamat Datang di</p><span class="bar"></span>
+    <h1>Khai &amp; Partners<span>Kantor Hukum</span></h1>
+    <p class="lede">Kantor hukum Indonesia yang berkantor pusat di Balikpapan, Kalimantan Timur, tempat nasihat hukum diberikan dengan ketepatan doktrin dan keterusterangan yang menjadi hak setiap klien.</p>
+    <a class="cta" href="contact-page.html">Hubungi Kami</a>
+    <div class="photo"><img src="../upload/khairul-anam-hero.webp" alt="Khairul Anam, Managing Partner" width="529" height="950"></div>
+    <div class="who"><strong>KHAIRUL ANAM</strong><em>S.H., S.Tr.Par., M.Par., M.H.</em><b>Managing Partner</b></div>
+  </div>
+</div>
+                            <div class="gdlr-master-slider-item gdlr-slider-item gdlr-item" style="margin-bottom: 0px;">
+
+                                <div id=rev_slider_1_1_wrapper class="rev_slider_wrapper fullwidthbanner-container" data-source=gallery style="margin:0px auto;background:#202020;padding:0px;margin-top:0px;margin-bottom:0px;">
+                                    <div id=rev_slider_1_1 class="rev_slider fullwidthabanner" style=display:none; data-version=5.4.8.2>
+                                        <ul>
+                                            <li data-index=rs-1 data-transition=fade data-slotamount=default data-hideafterloop=0 data-hideslideonmobile=off data-easein=default data-easeout=default data-masterspeed=300 data-thumb=../upload/slider-1-100x50.jpg data-rotate=0 data-saveperformance=off data-title=Slide data-param1 data-param2 data-param3 data-param4 data-param5 data-param6 data-param7 data-param8 data-param9 data-param10 data-description> 
+                                                <img src=../upload/slider-1.jpg alt title=slider-1 width=1800 height=1000 data-bgposition="center center" data-bgfit=cover data-bgrepeat=no-repeat class=rev-slidebg data-no-retina>
+<div class="tp-caption tp-resizeme" id="slide-1-layer-photo" data-x="right" data-hoffset="80" data-y="bottom" data-voffset="96" data-width="['none']" data-height="['auto']" data-type="image" data-responsive_offset="on" data-frames='[{"delay":300,"speed":1200,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" style="z-index: 4; white-space: normal;"><img src="../upload/khairul-anam-hero.webp" alt="Khairul Anam, Managing Partner" data-ww="['345px']" data-hh="['620px']" data-no-retina style="-webkit-mask-image:linear-gradient(#000 80%,transparent);mask-image:linear-gradient(#000 80%,transparent);"></div>
+<div class="tp-caption tp-resizeme" id="slide-1-layer-name" data-x="right" data-hoffset="40" data-y="bottom" data-voffset="14" data-width="['430']" data-height="['auto']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":900,"speed":1200,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textAlign="['center','center','center','center']" style="z-index: 6; white-space: normal;"><div style="font-family:Open Sans;font-weight:700;font-size:24px;line-height:27px;color:#fff;letter-spacing:2px;">KHAIRUL ANAM</div><div style="font-family:Open Sans;font-weight:400;font-size:15px;line-height:18px;color:rgba(255,255,255,.85);">S.H., S.Tr.Par., M.Par., M.H.</div><div style="font-family:Open Sans;font-weight:600;font-size:13px;line-height:17px;color:#c9ad7f;letter-spacing:1px;margin-top:0;">Managing Partner</div></div>
+                                                <div
+                                                    class="tp-caption tp-resizeme"
+                                                    id="slide-1-layer-1"
+                                                    data-x="left"
+                                                    data-hoffset="90"
+                                                    data-y="center"
+                                                    data-voffset="-182"
+                                                    data-width="['auto']"
+                                                    data-height="['auto']"
+                                                    data-type="text"
+                                                    data-responsive_offset="on"
+                                                    data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                                    data-textAlign="['left','left','left','left']"
+                                                    data-paddingtop="[0,0,0,0]"
+                                                    data-paddingright="[0,0,0,0]"
+                                                    data-paddingbottom="[0,0,0,0]"
+                                                    data-paddingleft="[0,0,0,0]"
+                                                    style="z-index: 5; white-space: nowrap; font-size: 30px; line-height: 32px; font-weight: 400; color: #b6a281; letter-spacing: 2px; font-family: Open Sans; text-transform: uppercase;"
+                                                >
+                                                    Selamat Datang di
+                                                </div>
+                                                <div
+                                                    class="tp-caption tp-shape tp-shapewrapper tp-resizeme"
+                                                    id="slide-1-layer-3"
+                                                    data-x="left"
+                                                    data-hoffset="90"
+                                                    data-y="center"
+                                                    data-voffset="-152"
+                                                    data-width="['103']"
+                                                    data-height="['1']"
+                                                    data-type="shape"
+                                                    data-responsive_offset="on"
+                                                    data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                                    data-textAlign="['left','left','left','left']"
+                                                    data-paddingtop="[0,0,0,0]"
+                                                    data-paddingright="[0,0,0,0]"
+                                                    data-paddingbottom="[0,0,0,0]"
+                                                    data-paddingleft="[0,0,0,0]"
+                                                    style="z-index: 6; background-color: rgb(182, 162, 129);"
+                                                ></div>
+                                                <div
+                                                    class="tp-caption tp-resizeme"
+                                                    id="slide-1-layer-4"
+                                                    data-x="left"
+                                                    data-hoffset="90"
+                                                    data-y="center"
+                                                    data-voffset="-100"
+                                                    data-width="['auto']"
+                                                    data-height="['auto']"
+                                                    data-type="text"
+                                                    data-responsive_offset="on"
+                                                    data-frames='[{"delay":310,"speed":300,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                                    data-textAlign="['left','left','left','left']"
+                                                    data-paddingtop="[0,0,0,0]"
+                                                    data-paddingright="[0,0,0,0]"
+                                                    data-paddingbottom="[0,0,0,0]"
+                                                    data-paddingleft="[0,0,0,0]"
+                                                    style="z-index: 7; white-space: nowrap; font-size: 64px; line-height: 70px; font-weight: 700; color: #ffffff; letter-spacing: 4px; font-family: Open Sans; text-transform: uppercase;"
+                                                >
+                                                    KHAI &amp; PARTNERS
+                                                </div>
+                                                <div
+                                                    class="tp-caption tp-resizeme"
+                                                    id="slide-1-layer-5"
+                                                    data-x="left"
+                                                    data-hoffset="90"
+                                                    data-y="center"
+                                                    data-voffset="-10"
+                                                    data-width="['520']"
+                                                    data-height="['81']"
+                                                    data-visibility="['on','on','off','off']"
+                                                    data-type="text"
+                                                    data-responsive_offset="on"
+                                                    data-frames='[{"delay":530,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                                    data-textAlign="['left','left','left','left']"
+                                                    data-paddingtop="[0,0,0,0]"
+                                                    data-paddingright="[0,0,0,0]"
+                                                    data-paddingbottom="[0,0,0,0]"
+                                                    data-paddingleft="[0,0,0,0]"
+                                                    style="z-index: 7; white-space: nowrap; font-size: 60px; line-height: 60px; font-weight: 700; color: #ffffff; letter-spacing: 8px; font-family: Open Sans; text-transform: uppercase;"
+                                                >
+                                                    KANTOR HUKUM
+                                                </div>
+                                                <div
+                                                    class="tp-caption tp-resizeme"
+                                                    id="slide-1-layer-5"
+                                                    data-x="left"
+                                                    data-hoffset="90"
+                                                    data-y="center"
+                                                    data-voffset="55"
+                                                    data-width="['740']"
+                                                    data-height="['81']"
+                                                    data-visibility="['on','on','off','off']"
+                                                    data-type="text"
+                                                    data-responsive_offset="on"
+                                                    data-frames='[{"delay":530,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                                    data-textAlign="['left','left','left','left']"
+                                                    data-paddingtop="[0,0,0,0]"
+                                                    data-paddingright="[0,0,0,0]"
+                                                    data-paddingbottom="[0,0,0,0]"
+                                                    data-paddingleft="[0,0,0,0]"
+                                                    style="z-index: 8; min-width: 610px; max-width: 610px; max-width: 81px; max-width: 81px; white-space: normal; font-size: 20px; line-height: 38px; font-weight: 500; color: #dedede; letter-spacing: 0px; font-family: Open Sans;"
+                                                >
+                                                    Kantor hukum Indonesia yang berkantor pusat di Balikpapan, Kalimantan Timur, tempat nasihat hukum diberikan dengan ketepatan doktrin dan keterusterangan yang menjadi hak setiap klien.
+                                                </div>
+                                                <div
+                                                    class="tp-caption rev-btn rev-withicon"
+                                                    id="slide-1-layer-7"
+                                                    data-x="left"
+                                                    data-hoffset="90"
+                                                    data-y="center"
+                                                    data-voffset="182"
+                                                    data-width="['auto']"
+                                                    data-height="['auto']"
+                                                    data-visibility="['on','on','off','off']"
+                                                    data-type="button"
+                                                    data-responsive_offset="on"
+                                                    data-frames='[{"delay":790,"speed":300,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:rgb(174,148,104);bs:solid;bw:0 0 0 0;"}]'
+                                                    data-textAlign="['left','left','left','left']"
+                                                    data-paddingtop="[14,14,14,14]"
+                                                    data-paddingright="[17,17,17,17]"
+                                                    data-paddingbottom="[16,16,16,16]"
+                                                    data-paddingleft="[23,23,23,23]"
+                                                    style="
+                                                        z-index: 9;
+                                                        white-space: nowrap;
+                                                        font-size: 12px;
+                                                        line-height: 17px;
+                                                        font-weight: 700;
+                                                        color: rgba(255, 255, 255, 1);
+                                                        letter-spacing: 2.5px;
+                                                        font-family: Open Sans;
+                                                        text-transform: uppercase;
+                                                        background: linear-gradient(180deg, rgba(131, 102, 62, 1) 0%, rgba(176, 150, 106, 1) 100%);
+                                                        border-color: rgba(0, 0, 0, 1);
+                                                        border-radius: 3px 3px 3px 3px;
+                                                        outline: none;
+                                                        box-shadow: none;
+                                                        box-sizing: border-box;
+                                                        -moz-box-sizing: border-box;
+                                                        -webkit-box-sizing: border-box;
+                                                        cursor: pointer;
+                                                    "
+                                                >
+                                                    <a href="contact-page.html" style="color:#fff;">Hubungi Kami<i class="fa-icon-long-arrow-right"></i></a>
+                                                </div>
+
+                                            </li>
+                                            <li data-index=rs-2 data-transition=fade data-slotamount=default data-hideafterloop=0 data-hideslideonmobile=off data-easein=default data-easeout=default data-masterspeed=300 data-thumb=../upload/slider-2-100x50.jpg data-rotate=0 data-saveperformance=off data-title=Slide data-param1 data-param2 data-param3 data-param4 data-param5 data-param6 data-param7 data-param8 data-param9 data-param10 data-description> 
+                                                <img src=../upload/slider-2.jpg alt title=slider-2 width=1800 height=1000 data-bgposition="center center" data-bgfit=cover data-bgrepeat=no-repeat class=rev-slidebg data-no-retina>
+                                                <div
+                                                    class="tp-caption tp-resizeme"
+                                                    id="slide-2-layer-1"
+                                                    data-x="center"
+                                                    data-hoffset
+                                                    data-y="center"
+                                                    data-voffset="-182"
+                                                    data-width="['auto']"
+                                                    data-height="['auto']"
+                                                    data-type="text"
+                                                    data-responsive_offset="on"
+                                                    data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                                    data-textAlign="['inherit','inherit','inherit','inherit']"
+                                                    data-paddingtop="[0,0,0,0]"
+                                                    data-paddingright="[0,0,0,0]"
+                                                    data-paddingbottom="[0,0,0,0]"
+                                                    data-paddingleft="[0,0,0,0]"
+                                                    style="z-index: 5; white-space: nowrap; font-size: 38px; line-height: 38px; font-weight: 400; color: #b6a281; letter-spacing: 2px; font-family: Open Sans; text-transform: uppercase;"
+                                                >
+                                                    Tentang Kami
+                                                </div>
+                                                <div
+                                                    class="tp-caption tp-shape tp-shapewrapper tp-resizeme"
+                                                    id="slide-2-layer-3"
+                                                    data-x="center"
+                                                    data-hoffset
+                                                    data-y="center"
+                                                    data-voffset="-152"
+                                                    data-width="['103']"
+                                                    data-height="['1']"
+                                                    data-type="shape"
+                                                    data-responsive_offset="on"
+                                                    data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                                    data-textAlign="['inherit','inherit','inherit','inherit']"
+                                                    data-paddingtop="[0,0,0,0]"
+                                                    data-paddingright="[0,0,0,0]"
+                                                    data-paddingbottom="[0,0,0,0]"
+                                                    data-paddingleft="[0,0,0,0]"
+                                                    style="z-index: 6; background-color: rgb(182, 162, 129);"
+                                                ></div>
+                                                <div
+                                                    class="tp-caption tp-resizeme"
+                                                    id="slide-2-layer-4"
+                                                    data-x="center"
+                                                    data-hoffset
+                                                    data-y="center"
+                                                    data-voffset="-80"
+                                                    data-width="['auto']"
+                                                    data-height="['auto']"
+                                                    data-type="text"
+                                                    data-responsive_offset="on"
+                                                    data-frames='[{"delay":310,"speed":300,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                                    data-textAlign="['inherit','inherit','inherit','inherit']"
+                                                    data-paddingtop="[0,0,0,0]"
+                                                    data-paddingright="[0,0,0,0]"
+                                                    data-paddingbottom="[0,0,0,0]"
+                                                    data-paddingleft="[0,0,0,0]"
+                                                    style="z-index: 7; white-space: nowrap; font-size: 80px; line-height: 80px; font-weight: 700; color: #ffffff; letter-spacing: 8px; font-family: Open Sans; text-transform: uppercase;"
+                                                >
+                                                    Prinsip yang teguh
+                                                </div>
+                                                <div
+                                                    class="tp-caption tp-resizeme"
+                                                    id="slide-2-layer-4"
+                                                    data-x="center"
+                                                    data-hoffset
+                                                    data-y="center"
+                                                    data-voffset="0"
+                                                    data-width="['auto']"
+                                                    data-height="['auto']"
+                                                    data-type="text"
+                                                    data-responsive_offset="on"
+                                                    data-frames='[{"delay":310,"speed":300,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                                    data-textAlign="['inherit','inherit','inherit','inherit']"
+                                                    data-paddingtop="[0,0,0,0]"
+                                                    data-paddingright="[0,0,0,0]"
+                                                    data-paddingbottom="[0,0,0,0]"
+                                                    data-paddingleft="[0,0,0,0]"
+                                                    style="z-index: 7; white-space: nowrap; font-size: 60px; line-height: 60px; font-weight: 700; color: #ffffff; letter-spacing: 8px; font-family: Open Sans; text-transform: uppercase;"
+                                                >
+                                                    Arah yang jelas
+                                                </div>
+                                                <div
+                                                    class="tp-caption tp-resizeme"
+                                                    id="slide-2-layer-5"
+                                                    data-x="center"
+                                                    data-hoffset
+                                                    data-y="center"
+                                                    data-voffset="80"
+                                                    data-width="['610']"
+                                                    data-height="['81']"
+                                                    data-visibility="['on','on','off','off']"
+                                                    data-type="text"
+                                                    data-responsive_offset="on"
+                                                    data-frames='[{"delay":530,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                                    data-textAlign="['center','center','center','center']"
+                                                    data-paddingtop="[0,0,0,0]"
+                                                    data-paddingright="[0,0,0,0]"
+                                                    data-paddingbottom="[0,0,0,0]"
+                                                    data-paddingleft="[0,0,0,0]"
+                                                    style="z-index: 8; min-width: 610px; max-width: 610px; max-width: 81px; max-width: 81px; white-space: normal; font-size: 20px; line-height: 38px; font-weight: 500; color: #dedede; letter-spacing: 0px; font-family: Open Sans;"
+                                                >
+                                                    Kantor hukum yang dibangun di atas integritas, ketelitian, dan nasihat strategis dalam setiap perkara.
+                                                </div>
+                                                <div
+                                                    class="tp-caption rev-btn rev-withicon"
+                                                    id="slide-2-layer-7"
+                                                    data-x="center"
+                                                    data-hoffset
+                                                    data-y="center"
+                                                    data-voffset="150"
+                                                    data-width="['auto']"
+                                                    data-height="['auto']"
+                                                    data-visibility="['on','on','off','off']"
+                                                    data-type="button"
+                                                    data-responsive_offset="on"
+                                                    data-frames='[{"delay":790,"speed":300,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:rgb(174,148,104);bs:solid;bw:0 0 0 0;"}]'
+                                                    data-textAlign="['inherit','inherit','inherit','inherit']"
+                                                    data-paddingtop="[14,14,14,14]"
+                                                    data-paddingright="[17,17,17,17]"
+                                                    data-paddingbottom="[16,16,16,16]"
+                                                    data-paddingleft="[23,23,23,23]"
+                                                    style="
+                                                        z-index: 9;
+                                                        white-space: nowrap;
+                                                        font-size: 12px;
+                                                        line-height: 17px;
+                                                        font-weight: 700;
+                                                        color: rgba(255, 255, 255, 1);
+                                                        letter-spacing: 2.5px;
+                                                        font-family: Open Sans;
+                                                        text-transform: uppercase;
+                                                        background: linear-gradient(180deg, rgba(131, 102, 62, 1) 0%, rgba(176, 150, 106, 1) 100%);
+                                                        border-color: rgba(0, 0, 0, 1);
+                                                        border-radius: 3px 3px 3px 3px;
+                                                        outline: none;
+                                                        box-shadow: none;
+                                                        box-sizing: border-box;
+                                                        -moz-box-sizing: border-box;
+                                                        -webkit-box-sizing: border-box;
+                                                        cursor: pointer;
+                                                    "
+                                                >
+                                                    <a href="contact-page.html" style="color:#fff;">Hubungi Kami<i class="fa-icon-long-arrow-right"></i></a>
+                                                </div>
+
+                                            </li>
+                                        </ul>
+                                        <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+                            <div class="clear"></div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </section>
+                    <section id="content-section-2">
+                        <div class="gdlr-full-size-wrapper gdlr-show-all" style="padding-bottom: 0px; background-color: #ffffff;">
+                            <div class="gdlr-service-half-background-item">
+                                <div class="gdlr-half-left" style="background: #b1976b;">
+                                    <div class="half-container">
+                                        <div class="gdlr-item-margin">
+                                            <div class="gdlr-service-half-background-left-head">
+                                                <div class="service-half-background-icon"><i class="fa fa-book"></i></div>
+                                                <h3 class="gdlr-left-service-title">Kantor hukum layanan menyeluruh, dibangun di atas ketelitian<span class="khai-sub">Berbasis di Balikpapan, Kalimantan Timur</span></h3>
+                                            </div>
+                                            <div class="gdlr-left-service-content">
+    <p style="text-align: justify;">
+        Kami mendampingi perorangan, pelaku usaha, dan institusi di berbagai bidang praktik — antara lain litigasi dan alternatif penyelesaian sengketa, hukum korporasi dan komersial, kepailitan, ketenagakerjaan, properti, hukum administrasi dan regulasi, hukum perdata, serta kekayaan intelektual — masing-masing ditangani dengan perhatian yang sama teguhnya terhadap doktrin dan hasil.
+    </p>
+</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gdlr-half-right" style="background: url('../upload/bg-service-half.jpg') center 0px;">
+                                    <div class="half-container">
+                                        <div class="gdlr-item-margin">
+                                            <h3 class="gdlr-right-service-title">Sekilas Tentang Kami</h3>
+                                            <div class="gdlr-right-service-caption"><p>Keahlian Hukum yang Dapat Anda Percaya</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </section>
+                    <section id="content-section-3">
+                        <div
+                            class="gdlr-parallax-wrapper gdlr-background-image gdlr-show-all gdlr-skin-dark-skin"
+                            id="gdlr-parallax-wrapper-1"
+                            data-bgspeed="0.1"
+                            style="background-image: url('../upload/bg-homepage-service.jpg'); padding-bottom: 0px;"
+                        >
+                            <div class="container">
+                                <div class="four columns">
+                                    <div class="gdlr-image-frame-item gdlr-item" style="margin-bottom: 0px;">
+                                        <div class="gdlr-frame frame-type-none">
+                                            <div class="gdlr-image-link-shortcode lawyer-photo">
+  <img
+    src="../upload/grub-photo-3-lawyer.png"
+    alt="Tim advokat KHAI &amp; Partners"
+  />
+</div>
+
+<style>
+  .lawyer-photo {
+    height: 550px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .lawyer-photo img {
+    height: 100%;
+    width: auto;
+    max-width: none;
+    flex-shrink: 0;
+    display: block;
+    transform: translateX(-180px);
+  }
+
+  /* Tampilan HP */
+  @media (max-width: 767px) {
+    .lawyer-photo {
+      height: auto;
+    }
+
+    .lawyer-photo img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      transform: none;
+    }
+  }
+</style>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="four columns">
+                                    <div class="gdlr-item gdlr-content-item" style="margin-bottom: 50px;"></div>
+                                    <div class="gdlr-ux column-service-ux">
+                                        <div class="gdlr-item gdlr-column-service-item gdlr-type-1" style="margin-bottom: 27px;">
+                                            <div class="column-service-icon gdlr-skin-box"><i class="fa fa-car"></i></div>
+                                            <div class="column-service-content-wrapper">
+                                                <h3 class="column-service-title">Hukum Korporasi &amp; Komersial</h3>
+                                               <div class="column-service-content gdlr-skin-content">
+                                                <p style="text-align: justify;">
+                                                    Pendampingan pendirian badan usaha, restrukturisasi perusahaan, merger dan akuisisi, serta perjanjian komersial.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gdlr-ux column-service-ux">
+                                        <div class="gdlr-item gdlr-column-service-item gdlr-type-1" style="margin-bottom: 27px;">
+                                            <div class="column-service-icon gdlr-skin-box"><i class="fa fa-users"></i></div>
+                                            <div class="column-service-content-wrapper">
+                                                <h3 class="column-service-title">Hukum Maritim &amp; Pelayaran</h3>
+                                                <div class="column-service-content gdlr-skin-content">
+                                                <p style="text-align: justify;">
+                                                    Pendampingan pengangkutan barang, operasional pelabuhan, dan sengketa maritim yang muncul dari peran Balikpapan sebagai simpul pelayaran dan logistik.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gdlr-ux column-service-ux">
+                                        <div class="gdlr-item gdlr-column-service-item gdlr-type-1">
+                                            <div class="column-service-icon gdlr-skin-box"><i class="fa fa-bank"></i></div>
+                                            <div class="column-service-content-wrapper">
+                                                <h3 class="column-service-title">Hukum Ketenagakerjaan</h3>
+                                                <div class="column-service-content gdlr-skin-content">
+                                                <p style="text-align: justify;">
+                                                    Pendampingan hubungan industrial, perselisihan ketenagakerjaan, dan peraturan internal perusahaan.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="four columns">
+                                    <div class="gdlr-item gdlr-content-item" style="margin-bottom: 50px;"></div>
+                                    <div class="gdlr-ux column-service-ux">
+                                        <div class="gdlr-item gdlr-column-service-item gdlr-type-1" style="margin-bottom: 27px;">
+                                            <div class="column-service-icon gdlr-skin-box"><i class="fa fa-support"></i></div>
+                                            <div class="column-service-content-wrapper">
+                                                <h3 class="column-service-title">Hukum Pidana</h3>
+                                                 <div class="column-service-content gdlr-skin-content">
+                                                <p style="text-align: justify;">
+                                                    Pendampingan bagi tersangka/terdakwa maupun pelapor dalam perkara pidana, sejak tahap penyidikan hingga persidangan.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gdlr-ux column-service-ux">
+                                        <div class="gdlr-item gdlr-column-service-item gdlr-type-1" style="margin-bottom: 27px;">
+                                            <div class="column-service-icon gdlr-skin-box"><i class="fa fa-ambulance"></i></div>
+                                            <div class="column-service-content-wrapper">
+                                                <h3 class="column-service-title">Litigasi &amp; Penyelesaian Sengketa</h3>
+                                                <div class="column-service-content gdlr-skin-content">
+                                                <p style="text-align: justify;">
+                                                    Mewakili klien di pengadilan umum maupun pengadilan khusus, serta melalui mediasi dan arbitrase.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gdlr-ux column-service-ux">
+                                        <div class="gdlr-item gdlr-column-service-item gdlr-type-1">
+                                            <div class="column-service-icon gdlr-skin-box"><i class="fa fa-home"></i></div>
+                                            <div class="column-service-content-wrapper">
+                                                <h3 class="column-service-title">Hukum Properti &amp; Pertanahan</h3>
+                                                <div class="column-service-content gdlr-skin-content">
+                                                <p style="text-align: justify;">
+                                                    Pendampingan transaksi properti, perizinan, sengketa tanah, dan proyek pengembangan.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </section>
+                    <section id="content-section-4">
+                        <div class="section-container container">
+                            <div class="gdlr-stunning-item-ux gdlr-ux">
+                                <div class="gdlr-item gdlr-stunning-item type-normal" style="margin-bottom: 67px;">
+                                    <h2 class="stunning-item-title">Selalu ada jalan ke depan. Kami menemukannya bersama Anda.</h2>
+                                    <div class="stunning-item-caption gdlr-skin-info gdlr-title-font">
+                                        <p>Setiap persoalan hukum layak mendapat perhatian yang sungguh-sungguh. Ceritakan situasi Anda kepada KHAI &amp; Partners, dan mari kita bahas bagaimana kami dapat membantu. <p><strong>Bicara langsung dengan kami — (+62) 823-5555-5880</strong></p>
+                                    </div>
+                                    <div class="stunning-item-icon">
+                                        <i class="fa fa-phone"></i>
+                                        <div class="stunning-item-icon-divider gdlr-left"></div>
+                                        <div class="stunning-item-icon-divider gdlr-right"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="clear"></div>
+                            <div class="gdlr-item-title-wrapper gdlr-item pos-center">
+                                <div class="gdlr-item-title-head"><h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border">Bidang Praktik Hukum</h3></div>
+                                <a class="gdlr-item-title-link" href="practice-areas-modern-4-columns.html">Lihat Semua Bidang<i class="fa fa-long-arrow-right icon-long-arrow-right"></i></a>
+                            </div>
+                            <div class="practice-item-wrapper type-modern-style gdlr-column-1-4" style="margin-bottom: 40px;" data-ajax="#">
+                                <div class="practice-item-holder">
+                                    <div class="gdlr-isotope" data-type="practice" data-layout="fitRows">
+                                        <div class="clear"></div>
+                                        <div class="three columns">
+                                            <div class="gdlr-item gdlr-modern-practice">
+                                                <div class="gdlr-ux gdlr-modern-practice-ux">
+                                                    <div class="gdlr-practice-thumbnail">
+                                                        <img src="../upload/card1.jpg" alt="Litigasi &amp; Penyelesaian Sengketa" width="400" height="300" />
+                                                        <div class="gdlr-practice-thumbnail-overlay"></div>
+                                                        <h3 class="practice-title"><a href="single-practice1.html"><span class="khai-vh">Litigasi &amp; Penyelesaian Sengketa</span></a></h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="three columns">
+                                            <div class="gdlr-item gdlr-modern-practice">
+                                                <div class="gdlr-ux gdlr-modern-practice-ux">
+                                                    <div class="gdlr-practice-thumbnail">
+                                                        <img src="../upload/card2.jpg" alt="Hukum Pidana" width="400" height="300" />
+                                                        <div class="gdlr-practice-thumbnail-overlay"></div>
+                                                        <h3 class="practice-title"><a href="single-practice2.html"><span class="khai-vh">Hukum Pidana</span></a></h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="three columns">
+                                            <div class="gdlr-item gdlr-modern-practice">    
+                                                <div class="gdlr-ux gdlr-modern-practice-ux">
+                                                    <div class="gdlr-practice-thumbnail">
+                                                        <img src="../upload/card3.jpg" alt="Hukum Siber &amp; Kejahatan Digital" width="400" height="300" />
+                                                        <div class="gdlr-practice-thumbnail-overlay"></div>
+                                                        <h3 class="practice-title"><a href="single-practice3.html"><span class="khai-vh">Hukum Siber &amp; Kejahatan Digital</span></a></h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="three columns">
+                                            <div class="gdlr-item gdlr-modern-practice">
+                                                <div class="gdlr-ux gdlr-modern-practice-ux">
+                                                    <div class="gdlr-practice-thumbnail">
+                                                        <img src="../upload/card4.jpg" alt="Hukum Korporasi &amp; Komersial" width="400" height="300" />
+                                                        <div class="gdlr-practice-thumbnail-overlay"></div>
+                                                        <h3 class="practice-title"><a href="single-practice4.html"><span class="khai-vh">Hukum Korporasi &amp; Komersial</span></a></h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="three columns">
+                                            <div class="gdlr-item gdlr-modern-practice">
+                                                <div class="gdlr-ux gdlr-modern-practice-ux">
+                                                    <div class="gdlr-practice-thumbnail">
+                                                        <img src="../upload/card5.jpg" alt="Hukum Perbankan &amp; Keuangan" width="400" height="300" />
+                                                        <div class="gdlr-practice-thumbnail-overlay"></div>
+                                                        <h3 class="practice-title"><a href="single-practice5.html"><span class="khai-vh">Hukum Perbankan &amp; Keuangan</span></a></h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="three columns">
+                                            <div class="gdlr-item gdlr-modern-practice">
+                                                <div class="gdlr-ux gdlr-modern-practice-ux">
+                                                    <div class="gdlr-practice-thumbnail">
+                                                        <img src="../upload/card15.jpg" alt="Hukum Keluarga &amp; Waris" width="400" height="300" />
+                                                        <div class="gdlr-practice-thumbnail-overlay"></div>
+                                                        <h3 class="practice-title"><a href="single-practice15.html"><span class="khai-vh">Hukum Keluarga &amp; Waris</span></a></h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="three columns">
+                                            <div class="gdlr-item gdlr-modern-practice">
+                                                <div class="gdlr-ux gdlr-modern-practice-ux">
+                                                    <div class="gdlr-practice-thumbnail">
+                                                        <img src="../upload/card11.jpg" alt="Hukum Maritim &amp; Pelayaran" width="400" height="300" />
+                                                        <div class="gdlr-practice-thumbnail-overlay"></div>
+                                                        <h3 class="practice-title"><a href="single-practice11.html"><span class="khai-vh">Hukum Maritim &amp; Pelayaran</span></a></h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="three columns">
+                                            <div class="gdlr-item gdlr-modern-practice">
+                                                <div class="gdlr-ux gdlr-modern-practice-ux">
+                                                    <div class="gdlr-practice-thumbnail">
+                                                        <img src="../upload/card8.jpg" alt="Hukum Ketenagakerjaan" width="400" height="300" />
+                                                        <div class="gdlr-practice-thumbnail-overlay"></div>
+                                                        <h3 class="practice-title"><a href="single-practice8.html"><span class="khai-vh">Hukum Ketenagakerjaan</span></a></h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+
+
+                    </section>
+                    <section id="content-section-5">
+                        <div class="gdlr-color-wrapper gdlr-show-all gdlr-skin-light-grey" style="background-color: #f5f5f5; padding-top: 65px;">
+                            <div class="container">
+                                <div class="six columns">
+                                    
+                                </div>
+                                
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </section>
+                    <section id="content-section-6">
+                        <div class="gdlr-color-wrapper gdlr-show-all no-skin" style="background-color: #ffffff; padding-top: 70px; padding-bottom: 0px;">
+                            <div class="container">
+                                <div class="attorney-item-wrapper">
+                                    <div class="gdlr-item-title-wrapper gdlr-item pos-center gdlr-nav-container">
+                                        <div class="gdlr-item-title-head">
+                                            <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border">Tim Advokat Kami</h3>
+                                            <div class="gdlr-item-title-nav">
+                                            
+                                            </div>
+                                        </div>
+                                        <div class="gdlr-item-title-divider"></div>
+                                    </div>
+                                    <div class="attorney-item-holder">
+                                        <div class="gdlr-attorney-carousel-item gdlr-item">
+    <div class="attorney-item-holder">
+
+        <!-- Attorney 1 -->
+        <div class="gdlr-item gdlr-attorney-item">
+            <div class="gdlr-attorney-thumbnail">
+                <a href="../upload/attorney-1-400x300.png" data-rel="fancybox">
+                    <img src="../upload/attorney-1-400x300.png" alt="" width="400" height="300" />
+                </a>
+            </div>
+
+            <div class="attorney-content-wrapper">
+                <h3 class="attorney-title gdlr-title">
+                    <a href="singleattorney-khai.html">Khairul Anam</a>
+                </h3>
+
+                <div class="attorney-position">
+                    S.H., S.Tr.Par., M.Par., M.H.
+                </div>
+
+                <div class="attorney-excerpt">
+                    Khairul Anam adalah Managing Partner sekaligus pendiri KHAI &amp; Partners, serta anggota DPC PERADI Balikpapan...
+                    <div class="clear"></div>
+                    <a href="singleattorney-khai.html" class="excerpt-read-more">Lihat Profil</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Attorney 2 -->
+        <div class="gdlr-item gdlr-attorney-item">
+            <div class="gdlr-attorney-thumbnail">
+                <a href="../upload/attorney-2-400x300.png" data-rel="fancybox">
+                    <img src="../upload/attorney-2-400x300.png" alt="" width="400" height="300" />
+                </a>
+            </div>
+
+            <div class="attorney-content-wrapper">
+                <h3 class="attorney-title gdlr-title">
+                    <a href="singleattorney-joko.html">Joko Ponconowo</a>
+                </h3>
+
+                <div class="attorney-position">
+                    S.H., M.H., C.R.A., C.T.L.
+                </div>
+
+                <div class="attorney-excerpt">
+                    Praktisi hukum Indonesia yang berpengalaman di bidang hukum korporasi, litigasi komersial, kepailitan dan PKPU, penyusunan kontrak...
+                    <div class="clear"></div>
+                    <a href="singleattorney-joko.html" class="excerpt-read-more">Lihat Profil</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Attorney 3 -->
+        <div class="gdlr-item gdlr-attorney-item">
+            <div class="gdlr-attorney-thumbnail">
+                <a href="../upload/attorney-3-400x300.png" data-rel="fancybox">
+                    <img src="../upload/attorney-3-400x300.png" alt="" width="400" height="300" />
+                </a>
+            </div>
+
+            <div class="attorney-content-wrapper">
+                <h3 class="attorney-title gdlr-title">
+                    <a href="singleattorney-everton.html">Everton Hutabarat</a>
+                </h3>
+
+                <div class="attorney-position">
+                    S.H., M.H.
+                </div>
+
+                <div class="attorney-excerpt">
+                    Advokat dan praktisi hukum yang berbasis di Balikpapan, Kalimantan Timur, dengan pengalaman lebih dari 13 tahun di bidang hukum bisnis...
+                    <div class="clear"></div>
+                    <a href="singleattorney-everton.html" class="excerpt-read-more">Lihat Profil</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </section>
+                   <style>
+    #content-section-7 .khai-contact-photo,
+    #content-section-7 .khai-contact-photo .gdlr-image-frame-item,
+    #content-section-7 .khai-contact-photo .gdlr-frame,
+    #content-section-7 .khai-contact-photo .gdlr-image-link-shortcode {
+        margin: 0;
+        padding: 0;
+    }
+
+    #content-section-7 .khai-contact-photo img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    @media (min-width: 768px) {
+        #content-section-7 .khai-contact-row {
+            display: flex;
+            align-items: stretch;
+        }
+
+        #content-section-7 .khai-contact-row > .six.columns {
+            float: none;
+            width: 50%;
+            min-width: 0;
+        }
+
+        #content-section-7 .khai-contact-photo {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+    }
+
+    @media (max-width: 767px) {
+        #content-section-7 .khai-contact-row > .six.columns {
+            float: none;
+            width: 100%;
+        }
+    }
+</style>
+
+<section id="content-section-7">
+    <div
+        class="gdlr-parallax-wrapper gdlr-background-image gdlr-show-all gdlr-skin-dark-skin"
+        id="gdlr-parallax-wrapper-2"
+        data-bgspeed="0"
+        style="background-image: url('../upload/bg-contact-hp.jpg'); padding-top: 70px; padding-bottom: 0;"
+    >
+        <div class="container khai-contact-row">
+
+            <!-- LEFT COLUMN: CONTACT FORM -->
+            <div class="six columns">
+
+                <div class="gdlr-title-item" style="margin-bottom: 45px;">
+                    <div class="gdlr-item-title-wrapper gdlr-item pos-center">
+
+                        <div class="gdlr-item-title-head">
+                            <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border">
+                                Jangan ragu untuk bertanya
+                            </h3>
+                        </div>
+
+                        <div class="gdlr-item-title-caption gdlr-skin-info">
+                            Hukum adalah persoalan yang rumit. Mengabaikannya dapat
+                            <br>
+                            menimbulkan masalah besar. Biarkan kami membantu Anda!
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="gdlr-item gdlr-content-item">
+                    <div
+                        role="form"
+                        class="wpcf7"
+                        id="wpcf7-f426-o1"
+                        lang="en-US"
+                        dir="ltr"
+                    >
+                        <div class="screen-reader-response">
+                            <p
+                                role="status"
+                                aria-live="polite"
+                                aria-atomic="true"
+                            ></p>
+                            <ul></ul>
+                        </div>
+
+                        <form
+                            method="post"
+                            action="../contactform/contactengine.php"
+                        >
+                            <input
+                                type="text"
+                                name="Name"
+                                id="Name"
+                                placeholder="Nama:"
+                                aria-label="Nama"
+                                class="input"
+                                required
+                            >
+
+                            <input
+                                type="text"
+                                name="City"
+                                id="City"
+                                placeholder="Kota:"
+                                aria-label="Kota"
+                                class="input"
+                                required
+                            >
+
+                            <input
+                                type="email"
+                                name="Email"
+                                id="Email"
+                                placeholder="Email:"
+                                aria-label="Email"
+                                class="input"
+                                required
+                            >
+
+                            <textarea
+                                name="Message"
+                                rows="10"
+                                cols="20"
+                                id="Message"
+                                placeholder="Pesan:"
+                                aria-label="Pesan"
+                                class="input"
+                                required
+                            ></textarea>
+
+                            <input
+                                type="submit"
+                                name="submit"
+                                value="Kirim"
+                                class="submit-button"
+                            >
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT COLUMN: IMAGE -->
+            <div class="six columns khai-contact-photo">
+                <div class="gdlr-image-frame-item gdlr-item">
+                    <div class="gdlr-frame frame-type-none">
+                        <div class="gdlr-image-link-shortcode">
+                            <img
+                                src="../upload/khairul-anam2.png?v=20261002-3"
+                                alt="Hubungi KHAI &amp; Partners"
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="clear"></div>
+</section>
+
+                <!-- Below Sidebar Section-->
+            </div>
+            <!-- gdlr-content -->
+            <div class="clear"></div>
+        </div>
+        <!-- content wrapper -->
+
+        <footer class="footer-wrapper">
+            <div class="footer-container container">
+                <div class="footer-column three columns" id="footer-widget-1">
+                    <div id="text-2" class="widget widget_text gdlr-item gdlr-widget">
+                        <h3 class="gdlr-widget-title">Tentang Kami</h3>
+                        <div class="clear"></div>
+                        <div class="textwidget">
+                            KHAI &amp; Partners adalah kantor hukum Indonesia yang berkantor pusat di Balikpapan, Kalimantan Timur, didirikan di atas satu prinsip sederhana: bahwa nasihat hukum, pada hakikatnya, adalah keadilan yang diterapkan.
+                            <div class="clear"></div>
+                            <div class="gdlr-space" style="margin-top: 20px;"></div>
+
+                            <a href="https://www.instagram.com/khai.partners/" target="_blank" rel="noopener">
+                            <img src="../upload/instagram.png" alt="Instagram" width="24" height="24">
+                            </a>
+
+                           </div>
+                    </div>
+                </div>
+                
+                <div class="footer-column three columns" id="footer-widget-3">
+                    <div id="text-3" class="widget widget_text gdlr-item gdlr-widget">
+                        <h3 class="gdlr-widget-title">Informasi Kontak</h3>
+                        <div class="clear"></div>
+                        <div class="textwidget">
+                            Alamat: Jalan Sarifuddin Yoes, Perumahan Sepinggan Pratama Blok C No. 10, Kelurahan Sepinggan, Kecamatan Balikpapan Selatan, Kota Balikpapan, Provinsi Kalimantan Timur 76115
+
+                            <div class="clear"></div>
+                            <div class="gdlr-space" style="margin-top: 10px;"></div>
+
+                            <img src="../images/phone.png" 
+                                 alt="Telepon" 
+                                 class="phone-icon">
+                                 +62-823-5555-5880
+
+                            <div class="clear"></div>
+                            <div class="gdlr-space" style="margin-top: 10px;"></div>
+
+                            <a href="https://wa.me/6282355555880?text=Halo%20Khai%20%26%20Partners%2C%20saya%20ingin%20menanyakan%20perihal%20konsultasi%20hukum."
+   target="_blank"
+   rel="noopener noreferrer"
+   style="color: inherit; text-decoration: none;">
+    <img src="../images/whatsapp.png"
+         alt="WhatsApp"
+         class="whatsapp-icon">
+    +62 823-5555-5880
+</a>
+
+                            <div class="clear"></div>
+                            <div class="gdlr-space" style="margin-top: 10px;"></div>
+
+                            <i class="gdlr-icon fa fa-envelope-o"
+   style="color: #fff; font-size: 16px;"></i>
+
+<a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=lawyer%40khai-partners.com&amp;su=Permintaan%20Konsultasi&amp;body=Halo%20Khai%20%26%20Partners%2C%20saya%20ingin%20menanyakan%20perihal%20konsultasi%20hukum."
+   target="_blank"
+   rel="noopener noreferrer">
+    lawyer@khai-partners.com
+</a>
+                        </div>
+                        <div class="clear"></div>
+                            <div class="gdlr-space" style="margin-top: 10px;"></div>
+
+                            <i class="fa fa-globe"
+   aria-hidden="true"
+   style="font-size: 24px; vertical-align: middle; margin-right: 8px;"></i>
+
+<a href="https://khai-partners.com">
+    khai-partners.com
+</a>
+
+                            <div class="clear"></div>
+                            <div class="gdlr-space" style="margin-top: 10px;"></div>
+                    </div>
+                </div>
+                <div class="footer-column three columns" id="footer-widget-4">
+                    <div id="nav_menu-5" class="widget widget_nav_menu gdlr-item gdlr-widget">
+                        <h3 class="gdlr-widget-title">Tautan Firma</h3>
+                        <div class="clear"></div>
+                        <div class="menu-business-overview-footer-container">
+                            <ul id="menu-business-overview-footer" class="menu">
+                                <li class="menu-item"><a href="attorney-4-columns.html">Tim Advokat</a></li>
+                                <li class="menu-item"><a href="practice-areas-modern-4-columns.html">Bidang Praktik</a></li>
+                                <li class="menu-item"><a href="qa.html">Tanya Jawab</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="copyright-wrapper">
+                <div class="copyright-container container">
+                    <div class="copyright-left">
+                        © 2026 Khai &amp; Partners. Hak cipta dilindungi undang-undang.
+                    </div>
+                    <div class="copyright-right">
+                        Balikpapan, Kalimantan Timur
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="khai-disclaimer">Situs ini memuat informasi umum dan bukan merupakan nasihat hukum.</div>
+            </div>
+        </footer>
+    </div>
+    <!-- body-wrapper -->
+
+
+
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-migrate.min.js"></script>
+
+
+    <script type="text/javascript" src="../js/plugins/regenerator-runtime.min.js"></script>
+    <script type="text/javascript" src="../js/plugins/gdlr-lawyer/gdlr-lawyer.js"></script>
+    <script type="text/javascript" src="../js/plugins/superfish/js/superfish.js"></script>
+    <script type="text/javascript" src="../js/plugins/hoverIntent.min.js"></script>
+    <script type="text/javascript" src="../js/plugins/dl-menu/modernizr.custom.js"></script>
+    <script type="text/javascript" src="../js/plugins/dl-menu/jquery.dlmenu.js"></script>
+    <script type="text/javascript" src="../js/plugins/jquery.easing.js"></script>
+    <script type="text/javascript" src="../js/plugins/jquery.transit.min.js"></script>
+    <script type="text/javascript" src="../js/plugins/fancybox/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="../js/plugins/fancybox/helpers/jquery.fancybox-media.js"></script>
+    <script type="text/javascript" src="../js/plugins/fancybox/helpers/jquery.fancybox-thumbs.js"></script>
+    <script type="text/javascript" src="../js/plugins/flexslider/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="../js/plugins/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="../js/plugins/gdlr-script.js"></script>
+
+    <script src='../js/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js'></script>
+    <script src='../js/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js'></script>
+    <script src="../js/plugins/revslider/public/assets/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="../js/plugins/revslider/public/assets/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="../js/plugins/revslider/public/assets/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="../js/plugins/revslider/public/assets/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="../js/plugins/revslider/public/assets/js/extensions/revolution.extension.parallax.min.js"></script>  
+    <script src="../js/plugins/revslider/public/assets/js/extensions/revolution.extension.actions.min.js"></script> 
+    <script src="../js/plugins/revslider/public/assets/js/extensions/revolution.extension.video.min.js"></script>
+
+    <script>
+        function setREVStartSize(e) {
+            try {
+                e.c = jQuery(e.c);
+                var i = jQuery(window).width(),
+                    t = 9999,
+                    r = 0,
+                    n = 0,
+                    l = 0,
+                    f = 0,
+                    s = 0,
+                    h = 0;
+                if (e.responsiveLevels && (jQuery.each(e.responsiveLevels, function(e, f) {
+                        f > i && (t = r = f, l = e), i > f && f > r && (r = f, n = e)
+                    }), t > r && (l = n)), f = e.gridheight[l] || e.gridheight[0] || e.gridheight, s = e.gridwidth[l] || e.gridwidth[0] || e.gridwidth, h = i / s, h = h > 1 ? 1 : h, f = Math.round(h * f), "fullscreen" == e.sliderLayout) {
+                    var u = (e.c.width(), jQuery(window).height());
+                    if (void 0 != e.fullScreenOffsetContainer) {
+                        var c = e.fullScreenOffsetContainer.split(",");
+                        if (c) jQuery.each(c, function(e, i) {
+                            u = jQuery(i).length > 0 ? u - jQuery(i).outerHeight(!0) : u
+                        }), e.fullScreenOffset.split("%").length > 1 && void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 ? u -= jQuery(window).height() * parseInt(e.fullScreenOffset, 0) / 100 : void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 && (u -= parseInt(e.fullScreenOffset, 0))
+                    }
+                    f = u
+                } else void 0 != e.minHeight && f < e.minHeight && (f = e.minHeight);
+                e.c.closest(".rev_slider_wrapper").css({
+                    height: f
+                })
+            } catch (d) {
+                console.log("Failure at Presize of Slider:" + d)
+            }
+        };
+    </script>
+    <script>
+        function revslider_showDoubleJqueryError(sliderID) {
+            var errorMessage = "Revolution Slider Error: You have some jquery.js library include that comes after the revolution files js include.";
+            errorMessage += "<br> This includes make eliminates the revolution slider libraries, and make it not work.";
+            errorMessage += "<br><br> To fix it you can:<br>&nbsp;&nbsp;&nbsp; 1. In the Slider Settings -> Troubleshooting set option:  <strong><b>Put JS Includes To Body</b></strong> option to true.";
+            errorMessage += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jquery.js include and remove it.";
+            errorMessage = "<span style=font-size:16px;color:#BC0C06;>" + errorMessage + "</span>";
+            jQuery(sliderID).show().html(errorMessage);
+        }
+    </script>
+    <script>
+        var htmlDiv = document.getElementById("rs-plugin-settings-inline-css");
+        var htmlDivCss = "";
+        if (htmlDiv) {
+            htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+        } else {
+            var htmlDiv = document.createElement("div");
+            htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
+            document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
+        }
+    </script>
+    <script>
+        if (setREVStartSize !== undefined) setREVStartSize({
+            c: '#rev_slider_1_1',
+            gridwidth: [1280],
+            gridheight: [750],
+            sliderLayout: 'auto'
+        });
+        var revapi1, tpj;
+        (function() {
+            if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded", onLoad);
+            else onLoad();
+
+            function onLoad() {
+                if (tpj === undefined) {
+                    tpj = jQuery;
+                    if ("off" == "on") tpj.noConflict();
+                }
+                if (tpj("#rev_slider_1_1").revolution == undefined) {
+                    revslider_showDoubleJqueryError("#rev_slider_1_1");
+                } else {
+                    revapi1 = tpj("#rev_slider_1_1").show().revolution({
+                        sliderType: "standard",
+                        jsFileLocation: "plugins/revslider/public/assets/js/",
+                        sliderLayout: "auto",
+                        dottedOverlay: "none",
+                        delay: 9000,
+                        navigation: {
+                            keyboardNavigation: "off",
+                            keyboard_direction: "horizontal",
+                            mouseScrollNavigation: "off",
+                            mouseScrollReverse: "default",
+                            onHoverStop: "off",
+                            arrows: {
+                                style: "uranus",
+                                enable: true,
+                                hide_onmobile: false,
+                                hide_onleave: true,
+                                hide_delay: 200,
+                                hide_delay_mobile: 1200,
+                                tmp: '',
+                                left: {
+                                    h_align: "left",
+                                    v_align: "center",
+                                    h_offset: 20,
+                                    v_offset: 0
+                                },
+                                right: {
+                                    h_align: "right",
+                                    v_align: "center",
+                                    h_offset: 20,
+                                    v_offset: 0
+                                }
+                            }
+                        },
+                        visibilityLevels: [1240, 1024, 778, 480],
+                        gridwidth: 1280,
+                        gridheight: 750,
+                        lazyType: "none",
+                        shadow: 0,
+                        spinner: "off",
+                        stopLoop: "off",
+                        stopAfterLoops: -1,
+                        stopAtSlide: -1,
+                        shuffle: "off",
+                        autoHeight: "off",
+                        disableProgressBar: "on",
+                        hideThumbsOnMobile: "off",
+                        hideSliderAtLimit: 0,
+                        hideCaptionAtLimit: 0,
+                        hideAllCaptionAtLilmit: 0,
+                        debugMode: false,
+                        fallbacks: {
+                            simplifyAll: "off",
+                            nextSlideOnWindowFocus: "off",
+                            disableFocusListener: false,
+                        }
+                    });
+                };
+            };
+        }());
+    </script>
+    <script>
+        var htmlDivCss = unescape("%23rev_slider_1_1%20.uranus.tparrows%20%7B%0A%20%20width%3A50px%3B%0A%20%20height%3A50px%3B%0A%20%20background%3Argba%28255%2C255%2C255%2C0%29%3B%0A%20%7D%0A%20%23rev_slider_1_1%20.uranus.tparrows%3Abefore%20%7B%0A%20width%3A50px%3B%0A%20height%3A50px%3B%0A%20line-height%3A50px%3B%0A%20font-size%3A40px%3B%0A%20transition%3Aall%200.3s%3B%0A-webkit-transition%3Aall%200.3s%3B%0A%20%7D%0A%20%0A%20%20%23rev_slider_1_1%20.uranus.tparrows%3Ahover%3Abefore%20%7B%0A%20%20%20%20opacity%3A0.75%3B%0A%20%20%7D%0A");
+        var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+        if (htmlDiv) {
+            htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+        } else {
+            var htmlDiv = document.createElement('div');
+            htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+            document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+        }
+    </script>
+
+
+</body>
+</html>

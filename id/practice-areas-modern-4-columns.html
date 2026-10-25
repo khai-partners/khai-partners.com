@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html class="ie ie7 ltie8 ltie9" lang="en-US"><![endif]-->
+<!--[if IE 8]><html class="ie ie8 ltie9" lang="en-US"><![endif]-->
+<!--[if !(IE 7) | !(IE 8)]><!-->
+<html lang="id">
+<!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0" />
+
+    <title>Khai &amp; Partners – Kantor Hukum</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+
+    <link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="../js/plugins/superfish/css/superfish.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="../js/plugins/dl-menu/component.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="../js/plugins/font-awesome-new/css/font-awesome.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="../js/plugins/fancybox/jquery.fancybox.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="../js/plugins/flexslider/flexslider.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="../css/style-responsive.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="../css/style-custom.css" type="text/css" media="all" />
+    <link rel="stylesheet" href='../js/plugins/revslider/public/assets/css/settings.css' type=text/css media=all>
+
+ 
+    <style>
+    .khai-practice-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 30px;
+        margin: 0 15px;
+    }
+
+    .khai-practice-grid > .three.columns {
+        float: none;
+        clear: none;
+        width: auto;
+        min-width: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .khai-practice-grid .gdlr-item {
+        margin: 0;
+    }
+
+    .khai-practice-grid .gdlr-practice-thumbnail {
+        position: relative;
+        aspect-ratio: 7 / 4;
+        overflow: hidden;
+    }
+
+    .khai-practice-grid .gdlr-practice-thumbnail img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Jangan jadikan elemen clear sebagai kartu */
+    .khai-practice-grid > .clear {
+        display: none;
+    }
+
+    @media (max-width: 959px) {
+        .khai-practice-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+
+    @media (max-width: 479px) {
+        .khai-practice-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<style>
+    #khai-practices .khai-cards {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-auto-rows: auto;
+        gap: 30px;
+    }
+
+    #khai-practices .khai-card {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 0 !important;
+        aspect-ratio: 700 / 400 !important;
+        padding: 0 !important;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #khai-practices .khai-card h3 {
+        position: absolute;
+        inset: 0;
+        margin: 0;
+        padding: 0;
+        min-height: 0;
+        font-size: 18px;
+        line-height: 1.25;
+    }
+
+    @media (max-width: 959px) {
+        #khai-practices .khai-cards {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+
+    @media (max-width: 479px) {
+        #khai-practices .khai-cards {
+            grid-template-columns: 1fr;
+        }
+    }
+    #khai-practices .khai-card h3 a {
+    font-size: 16px !important;
+    line-height: 1.3;
+}
+</style>
+
+<style>
+    @media (max-width: 767px) {
+        /* Sembunyikan menu hamburger */
+        .gdlr-header-wrapper .gdlr-responsive-navigation {
+            display: none !important;
+        }
+
+        /* Tampilkan navigasi desktop di HP */
+        .gdlr-header-wrapper .gdlr-navigation-wrapper {
+            display: block !important;
+            float: none !important;
+            width: 100%;
+            clear: both;
+            padding: 10px 0;
+        }
+
+        .gdlr-header-wrapper #gdlr-main-navigation {
+            display: block !important;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .gdlr-header-wrapper #menu-main-menu-1 {
+            display: flex !important;
+            justify-content: center;
+            width: max-content;
+            min-width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .gdlr-header-wrapper #menu-main-menu-1 > li {
+            float: none !important;
+            flex: 0 0 auto;
+        }
+
+        .gdlr-header-wrapper #menu-main-menu-1 > li > a {
+            padding: 12px 10px !important;
+            font-size: 11px !important;
+            white-space: nowrap;
+        }
+    }
+</style>
+
+<style id="khai-practice-image-style">
+#khai-practices .khai-card::after{background:rgba(11,20,36,0)!important}
+#khai-practices .khai-card:hover::after{background:rgba(11,20,36,.18)!important}
+#khai-practices .khai-card img{object-position:center 30%}
+#khai-practices .khai-card h3,#khai-practices .khai-card h3 a{position:absolute;inset:0;padding:0}
+.khai-vh{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+</style>
+<style id="khai-pa-intro-style">
+#khai-practices .khai-pa-intro{text-align:center;max-width:780px;margin:10px auto 40px;padding:0 15px}
+#khai-practices .khai-pa-intro h2{font-size:32px;line-height:1.3;font-weight:700;color:#262626;margin:0 0 14px}
+#khai-practices .khai-pa-intro p{font-size:16px;line-height:1.8;color:#666;margin:0}
+@media (max-width:767px){#khai-practices .khai-pa-intro h2{font-size:25px}}
+</style>
+<style id="khai-disclaimer-style">
+.khai-disclaimer{clear:both;max-width:1140px;margin:0 auto;padding:0 15px 14px;font-size:12px;line-height:1.5;color:rgba(255,255,255,.55);text-align:center}
+</style>
+<link rel="alternate" hreflang="en" href="https://khai-partners.com/practice-areas-modern-4-columns.html" />
+<link rel="alternate" hreflang="id" href="https://khai-partners.com/id/practice-areas-modern-4-columns.html" />
+<link rel="alternate" hreflang="x-default" href="https://khai-partners.com/practice-areas-modern-4-columns.html" />
+<style id="khai-lang-style">
+.gdlr-main-menu > li.khai-lang{display:flex;align-items:center;gap:6px;margin-left:14px;padding-left:16px;border-left:1px solid rgba(0,0,0,.15)}
+.gdlr-main-menu > li.khai-lang > a{display:inline-block!important;padding:0 2px!important;font-weight:600;opacity:.55;letter-spacing:1px}
+.gdlr-main-menu > li.khai-lang > a.is-active{opacity:1;color:#b1976b!important}
+.gdlr-main-menu > li.khai-lang > a:hover{opacity:1}
+.gdlr-main-menu > li.khai-lang .sep{opacity:.35}
+.khai-lang-mobile a{font-weight:600}
+@media (max-width:767px){.gdlr-header-wrapper #menu-main-menu-1 > li.khai-lang{order:-1;margin:0 4px 0 0;padding:0 10px 0 0;border-left:0;border-right:1px solid rgba(0,0,0,.15)}.gdlr-header-wrapper #menu-main-menu-1 > li.khai-lang > a{padding:12px 3px!important}}
+</style>
+</head>
+
+<body data-rsssl="1" class="home page-template-default page page-id-3928 _masterslider _msp_version_3.4.5">
+    <div class="body-wrapper float-menu" data-home="index.html">
+        <header class="gdlr-header-wrapper">
+            <!-- top navigation -->
+            <div class="top-navigation-wrapper">
+                <div class="top-navigation-container container">
+                    <div class="top-navigation-right">
+                        <div class="top-navigation-right-text">
+                            <div class="top-bar-right-text-inner">
+    <i class="fa fa-envelope-o"></i>
+    <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=lawyer%40khai-partners.com&amp;su=Permintaan%20Konsultasi&amp;body=Halo%20Khai%20%26%20Partners%2C%20saya%20ingin%20menanyakan%20perihal%20konsultasi%20hukum."
+       target="_blank"
+       rel="noopener noreferrer"
+       style="color: inherit;">
+        lawyer@khai-partners.com
+    </a>
+</div>
+                            <div class="top-bar-right-text-inner">
+    <i class="fa fa-phone"></i>
+    <a href="https://wa.me/6282355555880?text=Halo%20Khai%20%26%20Partners%2C%20saya%20ingin%20menanyakan%20perihal%20konsultasi%20hukum."
+       target="_blank"
+       rel="noopener noreferrer"
+       style="color: inherit;">
+        +62 823-5555-5880
+    </a>
+</div>
+                            
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <!-- logo -->
+            <div class="gdlr-header-inner">
+                <div class="gdlr-header-container container">
+                    <!-- logo -->
+                    <div class="gdlr-logo">
+                        <a href="index.html"> <img src="../upload/logo.png" alt="" width="391" height="205" /> </a>
+                        <div class="gdlr-responsive-navigation dl-menuwrapper" id="gdlr-responsive-navigation">
+                            <button class="dl-trigger">Buka Menu</button>
+
+                            <ul id="menu-main-menu" class="dl-menu gdlr-main-mobile-menu">
+                                <li class="menu-item"><a href="index.html">Beranda</a></li>
+                                <li class="menu-item"><a href="about-us.html">Tentang Kami</a></li>
+                                <li class="menu-item"><a href="practice-areas-modern-4-columns.html">Bidang Praktik</a></li>
+                                <li class="menu-item"><a href="attorney-4-columns.html">Tim Advokat</a></li>
+                                <li class="menu-item"><a href="careers.html">Karier</a></li>
+                                <li class="menu-item"><a href="contact-page.html">Kontak</a></li>
+                                <li class="menu-item khai-lang-mobile"><a href="../practice-areas-modern-4-columns.html" data-lang-link="en-mobile" lang="en" hreflang="en">English</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- navigation -->
+                    <div class="gdlr-navigation-wrapper">
+                        <nav class="gdlr-navigation" id="gdlr-main-navigation" role="navigation">
+                            <ul id="menu-main-menu-1" class="sf-menu gdlr-main-menu">
+                                <li
+                                    class="menu-item menu-item-home gdlr-normal-menu"
+                                >
+                                    <a href="index.html">Beranda</a>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-has-children-item menu-item-has-children gdlr-normal-menu"
+                                >
+                                    <a href="about-us.html" class="sf-with-ul-pre">Tentang Kami</a>
+                                    
+                                </li>
+                                <li class="menu-item menu-item-has-children-item menu-item-has-children current-menu-item gdlr-normal-menu" >
+                                    <a href="practice-areas-modern-4-columns.html" class="sf-with-ul-pre">Bidang Praktik</a>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-has-children-item menu-item-has-children gdlr-normal-menu"
+                                >
+                                    <a href="attorney-4-columns.html" class="sf-with-ul-pre">Tim Advokat</a>
+                                    
+                                </li>
+                                 <li
+                                    class="menu-item menu-item-has-children-item menu-item-has-children gdlr-normal-menu"
+                                >
+                                    <a href="careers.html" class="sf-with-ul-pre">Karier</a>
+                                    
+                                </li>
+                                <li
+                                    class="menu-item menu-item-has-children-item menu-item-has-children gdlr-mega-menu"
+                                >
+                                    
+                                <li
+                                    class="menu-item menu-item-has-children-item menu-item-has-children gdlr-mega-menu"
+                                >
+                                  <li class="menu-item menu-item-has-children-item menu-item-has-children gdlr-normal-menu">
+                        <a href="contact-page.html" class="sf-with-ul-pre">Kontak</a></li>
+<li class="menu-item khai-lang"><a href="../practice-areas-modern-4-columns.html" data-lang-link="en" lang="en" hreflang="en" title="English">EN</a><span class="sep">|</span><a href="practice-areas-modern-4-columns.html" data-lang-link="id" class="is-active" lang="id" hreflang="id" title="Bahasa Indonesia">ID</a></li>
+                        
+                        <div class="gdlr-menu-search" id="gdlr-menu-search">
+                            <form method="get" action="index.html">
+                                <div class="search-text">
+                                    <input type="text" value="Ketik kata kunci" name="s" autocomplete="off" data-default="Ketik kata kunci" />
+                                </div>
+                                <input type="submit" value="" />
+                                <div class="clear"></div>
+                            </form>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </header>
+
+        <div id="gdlr-header-substitute"></div>
+
+
+
+        <div class="gdlr-page-title-wrapper">
+            <div class="gdlr-page-title-overlay"></div>
+            <div class="gdlr-page-title-container container">
+                <h1 class="gdlr-page-title">Bidang Praktik</h1>
+            </div>
+        </div>
+        <!-- is search -->
+        <div class="content-wrapper">
+            <div class="gdlr-content">
+                <!-- Above Sidebar Section-->
+
+                <style>
+    #khai-practices .khai-cards {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-auto-rows: 1fr;
+        gap: 30px;
+        margin: 0 15px 30px;
+    }
+
+    #khai-practices .khai-card {
+        position: relative;
+        display: flex;
+        min-width: 0;
+        min-height: 240px;
+        overflow: hidden;
+        border-radius: 3px;
+        background: #766447;
+    }
+
+    #khai-practices .khai-card img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #khai-practices .khai-card::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(100, 78, 40, 0.58);
+        pointer-events: none;
+        transition: background 0.2s;
+    }
+
+    #khai-practices .khai-card:hover::after {
+        background: rgba(50, 40, 25, 0.65);
+    }
+
+    #khai-practices .khai-card h3 {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 18pt;
+        font-weight: 700;
+        line-height: 1.3;
+        text-align: center;
+    }
+
+    #khai-practices .khai-card h3 a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 25px 20px;
+        box-sizing: border-box;
+        color: #ffffff !important;
+        font-size: inherit;
+        line-height: inherit;
+        text-decoration: none;
+        overflow-wrap: anywhere;
+    }
+
+    #khai-practices .khai-card h3 a:focus-visible {
+        outline: 3px solid #ffffff;
+        outline-offset: -6px;
+    }
+
+    @media (max-width: 959px) {
+        #khai-practices .khai-cards {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+
+    @media (max-width: 479px) {
+        #khai-practices .khai-cards {
+            grid-template-columns: 1fr;
+        }
+    }
+    @media (min-width: 960px) {
+    #khai-practices .khai-cards {
+        grid-template-columns: repeat(8, minmax(0, 1fr));
+    }
+
+    #khai-practices .khai-card {
+        grid-column: span 2;
+    }
+
+    #khai-practices .khai-card:nth-last-child(3) {
+        grid-column: 2 / span 2;
+    }
+
+    #khai-practices .khai-card:nth-last-child(2) {
+        grid-column: 4 / span 2;
+    }
+
+    #khai-practices .khai-card:last-child {
+        grid-column: 6 / span 2;
+    }
+}
+</style>
+
+<div class="with-sidebar-wrapper">
+    <section id="khai-practices">
+        <div class="section-container container">
+            <div class="khai-pa-intro"><h2>Lima belas bidang praktik, satu standar</h2><p>Litigasi menetapkan standar bagi seluruh pekerjaan kami. Dari ruang sidang hingga ruang rapat, setiap bidang dijalankan dengan ketelitian yang sama dan diawasi langsung oleh partner.</p></div>
+            <div class="khai-cards">
+
+                <div class="khai-card">
+                    <img src="../upload/practice1.jpg" alt="">
+                    <h3>
+                        <a href="single-practice1.html"><span class="khai-vh">Litigasi &amp; Penyelesaian Sengketa</span></a>
+                    </h3>
+                </div>
+
+                <div class="khai-card">
+                    <img src="../upload/practice2.jpg" alt="">
+                    <h3>
+                        <a href="single-practice2.html"><span class="khai-vh">Hukum Pidana</span></a>
+                    </h3>
+                </div>
+
+                <div class="khai-card">
+                    <img src="../upload/practice3.jpg" alt="">
+                    <h3>
+                        <a href="single-practice3.html"><span class="khai-vh">Kejahatan Digital &amp; Hukum Siber</span></a>
+                    </h3>
+                </div>
+
+                <div class="khai-card">
+                    <img src="../upload/practice4.jpg" alt="">
+                    <h3>
+                        <a href="single-practice4.html"><span class="khai-vh">Hukum Korporasi &amp; Komersial</span></a>
+                    </h3>
+                </div>
+
+                <div class="khai-card">
+                    <img src="../upload/practice5.jpg" alt="">
+                    <h3>
+                        <a href="single-practice5.html"><span class="khai-vh">Hukum Perbankan &amp; Keuangan</span></a>
+                    </h3>
+                </div>
+
+                <div class="khai-card">
+                    <img src="../upload/practice7.jpg" alt="">
+                    <h3>
+                        <a href="single-practice7.html"><span class="khai-vh">Kepailitan &amp; PKPU</span></a>
+                    </h3>
+                </div>
+
+                <div class="khai-card">
+                    <img src="../upload/practice8.jpg" alt="">
+                    <h3>
+                        <a href="single-practice8.html"><span class="khai-vh">Hukum Ketenagakerjaan</span></a>
+                    </h3>
+                </div>
+
+                <div class="khai-card">
+                    <img src="../upload/practice9.jpg" alt="">
+                    <h3>
+                        <a href="single-practice9.html"><span class="khai-vh">Hukum Properti &amp; Pertanahan</span></a>
+                    </h3>
+                </div>
+
+                <div class="khai-card">
+                    <img src="../upload/practice10.jpg" alt="">
+                    <h3>
+                        <a href="single-practice10.html"><span class="khai-vh">Hukum Sumber Daya Alam, Pertambangan &amp; Energi</span></a>
+                    </h3>
+                </div>
+
+                <div class="khai-card">
+                    <img src="../upload/practice11.jpg" alt="">
+                    <h3>
+                        <a href="single-practice11.html"><span class="khai-vh">Hukum Maritim &amp; Pelayaran</span></a>
+                    </h3>
+                </div>
+
+                <div class="khai-card">
+                    <img src="../upload/practice12.jpg" alt="">
+                    <h3>
+                        <a href="single-practice12.html"><span class="khai-vh">Hukum Administrasi &amp; Regulasi</span></a>
+                    </h3>
+                </div>
+
+                <div class="khai-card">
+                    <img src="../upload/practice13.jpg" alt="">
+                    <h3>
+                        <a href="single-practice13.html"><span class="khai-vh">Hukum Pajak</span></a>
+                    </h3>
+                </div>
+
+                <div class="khai-card">
+                    <img src="../upload/practice14.jpg" alt="">
+                    <h3>
+                        <a href="single-practice14.html"><span class="khai-vh">Hukum Perdata</span></a>
+                    </h3>
+                </div>
+
+                <div class="khai-card">
+                    <img src="../upload/practice15.jpg" alt="">
+                    <h3>
+                        <a href="single-practice15.html"><span class="khai-vh">Hukum Keluarga &amp; Waris</span></a>
+                    </h3>
+                </div>
+
+                <div class="khai-card">
+                    <img src="../upload/practice16.jpg" alt="">
+                    <h3>
+                        <a href="single-practice16.html"><span class="khai-vh">Hukum Kekayaan Intelektual</span></a>
+                    </h3>
+                </div>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+</div>
+        <!-- content wrapper -->
+
+
+
+        <footer class="footer-wrapper">
+            <div class="footer-container container">
+                <div class="footer-column three columns" id="footer-widget-1">
+                    <div id="text-2" class="widget widget_text gdlr-item gdlr-widget">
+                        <h3 class="gdlr-widget-title">Tentang Kami</h3>
+                        <div class="clear"></div>
+                        <div class="textwidget">
+                            KHAI &amp; Partners adalah kantor hukum Indonesia yang berkantor pusat di Balikpapan, Kalimantan Timur, didirikan di atas satu prinsip sederhana: bahwa nasihat hukum, pada hakikatnya, adalah keadilan yang diterapkan.
+                            <div class="clear"></div>
+                            <div class="gdlr-space" style="margin-top: 20px;"></div>
+
+                            <a href="https://www.instagram.com/khai.partners/" target="_blank" rel="noopener">
+                            <img src="../upload/instagram.png" alt="Instagram" width="24" height="24">
+                            </a>
+
+                           </div>
+                    </div>
+                </div>
+                
+                <div class="footer-column three columns" id="footer-widget-3">
+                    <div id="text-3" class="widget widget_text gdlr-item gdlr-widget">
+                        <h3 class="gdlr-widget-title">Informasi Kontak</h3>
+                        <div class="clear"></div>
+                        <div class="textwidget">
+                            Alamat: Jalan Sarifuddin Yoes, Perumahan Sepinggan Pratama Blok C No. 10, Kelurahan Sepinggan, Kecamatan Balikpapan Selatan, Kota Balikpapan, Provinsi Kalimantan Timur 76115
+
+                            <div class="clear"></div>
+                            <div class="gdlr-space" style="margin-top: 10px;"></div>
+
+                            <img src="../images/phone.png" 
+                                 alt="Telepon" 
+                                 class="phone-icon">
+                                 +62-823-5555-5880
+
+                            <div class="clear"></div>
+                            <div class="gdlr-space" style="margin-top: 10px;"></div>
+
+                            <a href="https://wa.me/6282355555880?text=Halo%20Khai%20%26%20Partners%2C%20saya%20ingin%20menanyakan%20perihal%20konsultasi%20hukum."
+   target="_blank"
+   rel="noopener noreferrer"
+   style="color: inherit; text-decoration: none;">
+    <img src="../images/whatsapp.png"
+         alt="WhatsApp"
+         class="whatsapp-icon">
+    +62 823-5555-5880
+</a>
+
+                            <div class="clear"></div>
+                            <div class="gdlr-space" style="margin-top: 10px;"></div>
+
+                            <i class="gdlr-icon fa fa-envelope-o"
+   style="color: #fff; font-size: 16px;"></i>
+
+<a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=lawyer%40khai-partners.com&amp;su=Permintaan%20Konsultasi&amp;body=Halo%20Khai%20%26%20Partners%2C%20saya%20ingin%20menanyakan%20perihal%20konsultasi%20hukum."
+   target="_blank"
+   rel="noopener noreferrer">
+    lawyer@khai-partners.com
+</a>
+                        </div>
+                        <div class="clear"></div>
+                            <div class="gdlr-space" style="margin-top: 10px;"></div>
+
+                            <i class="fa fa-globe"
+   aria-hidden="true"
+   style="font-size: 24px; vertical-align: middle; margin-right: 8px;"></i>
+
+<a href="https://khai-partners.com">
+    khai-partners.com
+</a>
+
+                            <div class="clear"></div>
+                            <div class="gdlr-space" style="margin-top: 10px;"></div>
+                    </div>
+                </div>
+                <div class="footer-column three columns" id="footer-widget-4">
+                    <div id="nav_menu-5" class="widget widget_nav_menu gdlr-item gdlr-widget">
+                        <h3 class="gdlr-widget-title">Tautan Firma</h3>
+                        <div class="clear"></div>
+                        <div class="menu-business-overview-footer-container">
+                            <ul id="menu-business-overview-footer" class="menu">
+                                <li class="menu-item"><a href="attorney-4-columns.html">Tim Advokat</a></li>
+                                <li class="menu-item"><a href="practice-areas-modern-4-columns.html">Bidang Praktik</a></li>
+                                <li class="menu-item"><a href="qa.html">Tanya Jawab</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="copyright-wrapper">
+                <div class="copyright-container container">
+                    <div class="copyright-left">
+                        © 2026 Khai &amp; Partners. Hak cipta dilindungi undang-undang.
+                    </div>
+                    <div class="copyright-right">
+                        Balikpapan, Kalimantan Timur
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="khai-disclaimer">Situs ini memuat informasi umum dan bukan merupakan nasihat hukum.</div>
+            </div>
+        </footer>
+    </div>
+    <!-- body-wrapper -->
+
+
+
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-migrate.min.js"></script>
+
+
+    <script type="text/javascript" src="../js/plugins/regenerator-runtime.min.js"></script>
+    <script type="text/javascript" src="../js/plugins/gdlr-lawyer/gdlr-lawyer.js"></script>
+    <script type="text/javascript" src="../js/plugins/superfish/js/superfish.js"></script>
+    <script type="text/javascript" src="../js/plugins/hoverIntent.min.js"></script>
+    <script type="text/javascript" src="../js/plugins/dl-menu/modernizr.custom.js"></script>
+    <script type="text/javascript" src="../js/plugins/dl-menu/jquery.dlmenu.js"></script>
+    <script type="text/javascript" src="../js/plugins/jquery.easing.js"></script>
+    <script type="text/javascript" src="../js/plugins/jquery.transit.min.js"></script>
+    <script type="text/javascript" src="../js/plugins/fancybox/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="../js/plugins/fancybox/helpers/jquery.fancybox-media.js"></script>
+    <script type="text/javascript" src="../js/plugins/fancybox/helpers/jquery.fancybox-thumbs.js"></script>
+    <script type="text/javascript" src="../js/plugins/flexslider/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="../js/plugins/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="../js/plugins/gdlr-script.js"></script>
+
+
+</body>
+</html>
