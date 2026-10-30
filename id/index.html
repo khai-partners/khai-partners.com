@@ -169,6 +169,39 @@
 .khai-lang-mobile a{font-weight:600}
 @media (max-width:767px){.gdlr-header-wrapper #menu-main-menu-1 > li.khai-lang{order:-1;margin:0 4px 0 0;padding:0 10px 0 0;border-left:0;border-right:1px solid rgba(0,0,0,.15)}.gdlr-header-wrapper #menu-main-menu-1 > li.khai-lang > a{padding:12px 3px!important}}
 </style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;family=Cormorant+Garamond:wght@500&amp;display=swap">
+<style id="khai-pa-slider-style">
+.kps{font-family:"Lato",Arial,sans-serif;clear:both}
+.kps-band{background:#333;padding:44px 20px;text-align:center}
+.kps-band h2{margin:0;color:#fff;font:700 clamp(21px,2.2vw,32px)/1.2 "Lato",Arial,sans-serif;text-transform:uppercase;letter-spacing:.3px}
+.kps-viewport{position:relative;margin-top:68px}
+.kps-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;list-style:none;margin:0;padding:0;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.kps-track::-webkit-scrollbar{display:none}
+.kps-slide{flex:0 0 25%;margin:0;padding:0;scroll-snap-align:start;list-style:none}
+.kps-slide a{position:relative;display:block;aspect-ratio:500/545;overflow:hidden;background:#2c4258;color:#fff!important;text-decoration:none}
+.kps-slide img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.05) brightness(1.18);transform:scale(1.02);transition:transform .9s ease}
+.kps-slide a:before{content:"";position:absolute;inset:0;z-index:1;background:#7499b4;mix-blend-mode:multiply}
+.kps-slide a:after{content:"";position:absolute;inset:0;z-index:1;background:rgba(20,34,48,.24);transition:background .45s ease}
+.kps-slide a:hover img{transform:scale(1.07)}
+.kps-slide a:hover:after{background:rgba(20,34,48,.08)}
+.kps-slide a:focus-visible{outline:3px solid #b1976b;outline-offset:-3px}
+.kps-txt{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:30% 10% 0;text-align:center}
+.kps-kicker{font:500 clamp(22px,2.15vw,34px)/1.2 "Cormorant Garamond",Georgia,serif;letter-spacing:.3px;text-shadow:0 1px 8px rgba(0,0,0,.35)}
+.kps-rule{display:block;width:100%;height:1px;background:rgba(255,255,255,.85);margin:24px 0 26px}
+.kps-title{display:block;min-height:2.7em;font:700 clamp(15px,1.5vw,23px)/1.35 "Lato",Arial,sans-serif;text-transform:uppercase;letter-spacing:.3px;text-shadow:0 1px 8px rgba(0,0,0,.35)}
+.kps-nav{position:absolute;top:50%;z-index:3;width:40px;height:72px;margin-top:-36px;padding:8px;border:0;background:transparent;color:#fff;cursor:pointer;opacity:.85}
+.kps-nav:hover{opacity:1}
+.kps-nav:focus-visible{outline:2px solid #fff}
+.kps-nav svg{display:block;width:100%;height:100%}
+.kps-prev{left:10px}.kps-next{right:10px}
+.kps-all{margin:62px 0 76px;text-align:center}
+.kps-all a{display:inline-block;padding-bottom:4px;border-bottom:3px solid #c8c8c8;color:#262626!important;font:400 clamp(17px,1.65vw,26px)/1.2 "Lato",Arial,sans-serif;letter-spacing:1px;text-transform:uppercase;text-decoration:none}
+.kps-all a:hover{border-bottom-color:#b1976b}
+@media (max-width:1024px){.kps-slide{flex-basis:33.3333%}}
+@media (max-width:767px){.kps-slide{flex-basis:50%}.kps-viewport{margin-top:40px}.kps-band{padding:32px 16px}.kps-rule{margin:16px 0 18px}}
+@media (max-width:480px){.kps-slide{flex-basis:86%}.kps-kicker{font-size:26px}.kps-title{font-size:18px}}
+@media (prefers-reduced-motion:reduce){.kps-track{scroll-behavior:auto}.kps-slide img,.kps-slide a:after{transition:none}}
+</style>
 </head>
 
 <body data-rsssl="1" class="home page-template-default page page-id-3928 _masterslider _msp_version_3.4.5">
@@ -813,112 +846,68 @@ setTimeout(gone,1600);})();</script>
                             </div>
                             <div class="clear"></div>
                             <div class="clear"></div>
-                            <div class="gdlr-item-title-wrapper gdlr-item pos-center">
-                                <div class="gdlr-item-title-head"><h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border">Bidang Praktik Hukum</h3></div>
-                                <a class="gdlr-item-title-link" href="practice-areas-modern-4-columns.html">Lihat Semua Bidang<i class="fa fa-long-arrow-right icon-long-arrow-right"></i></a>
-                            </div>
-                            <div class="practice-item-wrapper type-modern-style gdlr-column-1-4" style="margin-bottom: 40px;" data-ajax="#">
-                                <div class="practice-item-holder">
-                                    <div class="gdlr-isotope" data-type="practice" data-layout="fitRows">
-                                        <div class="clear"></div>
-                                        <div class="three columns">
-                                            <div class="gdlr-item gdlr-modern-practice">
-                                                <div class="gdlr-ux gdlr-modern-practice-ux">
-                                                    <div class="gdlr-practice-thumbnail">
-                                                        <img src="../upload/card1.jpg" alt="Litigasi &amp; Penyelesaian Sengketa" width="400" height="300" />
-                                                        <div class="gdlr-practice-thumbnail-overlay"></div>
-                                                        <h3 class="practice-title"><a href="single-practice1.html"><span class="khai-vh">Litigasi &amp; Penyelesaian Sengketa</span></a></h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="three columns">
-                                            <div class="gdlr-item gdlr-modern-practice">
-                                                <div class="gdlr-ux gdlr-modern-practice-ux">
-                                                    <div class="gdlr-practice-thumbnail">
-                                                        <img src="../upload/card2.jpg" alt="Hukum Pidana" width="400" height="300" />
-                                                        <div class="gdlr-practice-thumbnail-overlay"></div>
-                                                        <h3 class="practice-title"><a href="single-practice2.html"><span class="khai-vh">Hukum Pidana</span></a></h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="three columns">
-                                            <div class="gdlr-item gdlr-modern-practice">    
-                                                <div class="gdlr-ux gdlr-modern-practice-ux">
-                                                    <div class="gdlr-practice-thumbnail">
-                                                        <img src="../upload/card3.jpg" alt="Hukum Siber &amp; Kejahatan Digital" width="400" height="300" />
-                                                        <div class="gdlr-practice-thumbnail-overlay"></div>
-                                                        <h3 class="practice-title"><a href="single-practice3.html"><span class="khai-vh">Hukum Siber &amp; Kejahatan Digital</span></a></h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="three columns">
-                                            <div class="gdlr-item gdlr-modern-practice">
-                                                <div class="gdlr-ux gdlr-modern-practice-ux">
-                                                    <div class="gdlr-practice-thumbnail">
-                                                        <img src="../upload/card4.jpg" alt="Hukum Korporasi &amp; Komersial" width="400" height="300" />
-                                                        <div class="gdlr-practice-thumbnail-overlay"></div>
-                                                        <h3 class="practice-title"><a href="single-practice4.html"><span class="khai-vh">Hukum Korporasi &amp; Komersial</span></a></h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="clear"></div>
-                                        <div class="three columns">
-                                            <div class="gdlr-item gdlr-modern-practice">
-                                                <div class="gdlr-ux gdlr-modern-practice-ux">
-                                                    <div class="gdlr-practice-thumbnail">
-                                                        <img src="../upload/card5.jpg" alt="Hukum Perbankan &amp; Keuangan" width="400" height="300" />
-                                                        <div class="gdlr-practice-thumbnail-overlay"></div>
-                                                        <h3 class="practice-title"><a href="single-practice5.html"><span class="khai-vh">Hukum Perbankan &amp; Keuangan</span></a></h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="three columns">
-                                            <div class="gdlr-item gdlr-modern-practice">
-                                                <div class="gdlr-ux gdlr-modern-practice-ux">
-                                                    <div class="gdlr-practice-thumbnail">
-                                                        <img src="../upload/card15.jpg" alt="Hukum Keluarga &amp; Waris" width="400" height="300" />
-                                                        <div class="gdlr-practice-thumbnail-overlay"></div>
-                                                        <h3 class="practice-title"><a href="single-practice15.html"><span class="khai-vh">Hukum Keluarga &amp; Waris</span></a></h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="three columns">
-                                            <div class="gdlr-item gdlr-modern-practice">
-                                                <div class="gdlr-ux gdlr-modern-practice-ux">
-                                                    <div class="gdlr-practice-thumbnail">
-                                                        <img src="../upload/card11.jpg" alt="Hukum Maritim &amp; Pelayaran" width="400" height="300" />
-                                                        <div class="gdlr-practice-thumbnail-overlay"></div>
-                                                        <h3 class="practice-title"><a href="single-practice11.html"><span class="khai-vh">Hukum Maritim &amp; Pelayaran</span></a></h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="three columns">
-                                            <div class="gdlr-item gdlr-modern-practice">
-                                                <div class="gdlr-ux gdlr-modern-practice-ux">
-                                                    <div class="gdlr-practice-thumbnail">
-                                                        <img src="../upload/card8.jpg" alt="Hukum Ketenagakerjaan" width="400" height="300" />
-                                                        <div class="gdlr-practice-thumbnail-overlay"></div>
-                                                        <h3 class="practice-title"><a href="single-practice8.html"><span class="khai-vh">Hukum Ketenagakerjaan</span></a></h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                            </div>
+                            
                             <div class="clear"></div>
                         </div>
                         <div class="clear"></div>
 
 
+                    <div id="khai-pa-slider" class="kps" aria-roledescription="carousel" aria-label="Bidang praktik">
+  <div class="kps-band"><h2>Bidang Praktik Kami</h2></div>
+  <div class="kps-viewport">
+    <button type="button" class="kps-nav kps-prev" aria-label="Bidang praktik sebelumnya"><svg viewBox="0 0 24 48" aria-hidden="true"><path d="M18 4 4 24l14 20" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+    <ul class="kps-track">
+      <li class="kps-slide"><a href="single-practice1.html"><img src="../upload/pa/pa1.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-txt"><span class="kps-kicker">Bidang Praktik</span><span class="kps-rule"></span><span class="kps-title">Litigasi &amp; Penyelesaian Sengketa</span></span></a></li>
+      <li class="kps-slide"><a href="single-practice4.html"><img src="../upload/pa/pa4.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-txt"><span class="kps-kicker">Bidang Praktik</span><span class="kps-rule"></span><span class="kps-title">Hukum Korporasi &amp; Komersial</span></span></a></li>
+      <li class="kps-slide"><a href="single-practice2.html"><img src="../upload/pa/pa2.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-txt"><span class="kps-kicker">Bidang Praktik</span><span class="kps-rule"></span><span class="kps-title">Hukum Pidana</span></span></a></li>
+      <li class="kps-slide"><a href="single-practice11.html"><img src="../upload/pa/pa11.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-txt"><span class="kps-kicker">Bidang Praktik</span><span class="kps-rule"></span><span class="kps-title">Hukum Maritim &amp; Pelayaran</span></span></a></li>
+      <li class="kps-slide"><a href="single-practice8.html"><img src="../upload/pa/pa8.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-txt"><span class="kps-kicker">Bidang Praktik</span><span class="kps-rule"></span><span class="kps-title">Hukum Ketenagakerjaan</span></span></a></li>
+      <li class="kps-slide"><a href="single-practice9.html"><img src="../upload/pa/pa9.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-txt"><span class="kps-kicker">Bidang Praktik</span><span class="kps-rule"></span><span class="kps-title">Hukum Properti &amp; Pertanahan</span></span></a></li>
+      <li class="kps-slide"><a href="single-practice5.html"><img src="../upload/pa/pa5.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-txt"><span class="kps-kicker">Bidang Praktik</span><span class="kps-rule"></span><span class="kps-title">Hukum Perbankan &amp; Keuangan</span></span></a></li>
+      <li class="kps-slide"><a href="single-practice7.html"><img src="../upload/pa/pa7.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-txt"><span class="kps-kicker">Bidang Praktik</span><span class="kps-rule"></span><span class="kps-title">Kepailitan &amp; PKPU</span></span></a></li>
+      <li class="kps-slide"><a href="single-practice10.html"><img src="../upload/pa/pa10.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-txt"><span class="kps-kicker">Bidang Praktik</span><span class="kps-rule"></span><span class="kps-title">Hukum Sumber Daya Alam, Pertambangan &amp; Energi</span></span></a></li>
+      <li class="kps-slide"><a href="single-practice12.html"><img src="../upload/pa/pa12.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-txt"><span class="kps-kicker">Bidang Praktik</span><span class="kps-rule"></span><span class="kps-title">Hukum Administrasi &amp; Regulasi</span></span></a></li>
+      <li class="kps-slide"><a href="single-practice13.html"><img src="../upload/pa/pa13.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-txt"><span class="kps-kicker">Bidang Praktik</span><span class="kps-rule"></span><span class="kps-title">Hukum Pajak</span></span></a></li>
+      <li class="kps-slide"><a href="single-practice14.html"><img src="../upload/pa/pa14.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-txt"><span class="kps-kicker">Bidang Praktik</span><span class="kps-rule"></span><span class="kps-title">Hukum Perdata</span></span></a></li>
+      <li class="kps-slide"><a href="single-practice15.html"><img src="../upload/pa/pa15.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-txt"><span class="kps-kicker">Bidang Praktik</span><span class="kps-rule"></span><span class="kps-title">Hukum Keluarga &amp; Waris</span></span></a></li>
+      <li class="kps-slide"><a href="single-practice16.html"><img src="../upload/pa/pa16.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-txt"><span class="kps-kicker">Bidang Praktik</span><span class="kps-rule"></span><span class="kps-title">Hukum Kekayaan Intelektual</span></span></a></li>
+      <li class="kps-slide"><a href="single-practice3.html"><img src="../upload/pa/pa3.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-txt"><span class="kps-kicker">Bidang Praktik</span><span class="kps-rule"></span><span class="kps-title">Kejahatan Digital &amp; Hukum Siber</span></span></a></li>
+    </ul>
+    <button type="button" class="kps-nav kps-next" aria-label="Bidang praktik berikutnya"><svg viewBox="0 0 24 48" aria-hidden="true"><path d="m6 4 14 20L6 44" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+  </div>
+  <p class="kps-all"><a href="practice-areas-modern-4-columns.html">Lihat Semua Bidang Praktik</a></p>
+</div>
+<script>
+(function () {
+  var root = document.getElementById("khai-pa-slider");
+  if (!root) return;
+  var track = root.querySelector(".kps-track");
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function step() {
+    var s = track.querySelector(".kps-slide");
+    return s ? s.getBoundingClientRect().width : track.clientWidth;
+  }
+  function go(dir) {
+    var max = track.scrollWidth - track.clientWidth - 2;
+    if (dir > 0 && track.scrollLeft >= max) { track.scrollTo({ left: 0 }); return; }
+    if (dir < 0 && track.scrollLeft <= 2) { track.scrollTo({ left: track.scrollWidth }); return; }
+    track.scrollBy({ left: dir * step() });
+  }
+  root.querySelector(".kps-prev").addEventListener("click", function () { go(-1); });
+  root.querySelector(".kps-next").addEventListener("click", function () { go(1); });
+  if (reduce) return;
+  var paused = false;
+  ["mouseenter", "focusin", "touchstart", "pointerdown"].forEach(function (e) {
+    root.addEventListener(e, function () { paused = true; }, { passive: true });
+  });
+  ["mouseleave", "focusout"].forEach(function (e) {
+    root.addEventListener(e, function () { paused = false; });
+  });
+  setInterval(function () {
+    if (!paused && !document.hidden) go(1);
+  }, 4500);
+})();
+</script>
                     </section>
                     <section id="content-section-5">
                         <div class="gdlr-color-wrapper gdlr-show-all gdlr-skin-light-grey" style="background-color: #f5f5f5; padding-top: 65px;">
