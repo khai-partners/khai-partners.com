@@ -220,6 +220,21 @@
 #content-section-3 .khai-team-photo img{height:100%;width:auto;max-width:none;display:block}
 @media (max-width:767px){#content-section-3 .khai-team-photo{height:auto;padding-top:30px}#content-section-3 .khai-team-photo img{width:100%;height:auto;max-width:100%}}
 </style>
+<style id="khai-lawyer-slider-style">
+#khai-lawyer-slider .kls-slide{flex:0 0 33.3333%;margin:0;padding:0;scroll-snap-align:start;list-style:none}
+#khai-lawyer-slider .kls-slide a{position:relative;display:block;aspect-ratio:4/5;overflow:hidden;background:#2a2c30;color:#fff!important;text-decoration:none}
+#khai-lawyer-slider .kls-slide img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;transform:scale(1.01);transition:transform .9s ease}
+#khai-lawyer-slider .kls-slide a:after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(to bottom,rgba(15,26,38,0) 45%,rgba(15,26,38,.82) 100%);transition:opacity .45s}
+#khai-lawyer-slider .kls-slide a:hover img{transform:scale(1.05)}
+#khai-lawyer-slider .kls-slide a:focus-visible{outline:3px solid #b1976b;outline-offset:-3px}
+#khai-lawyer-slider .kls-txt{position:absolute;left:0;right:0;bottom:0;z-index:2;display:flex;flex-direction:column;align-items:center;padding:0 10% 34px;text-align:center}
+#khai-lawyer-slider .kls-name{font:500 clamp(24px,2.3vw,36px)/1.15 "Cormorant Garamond",Georgia,serif;text-shadow:0 1px 8px rgba(0,0,0,.4)}
+#khai-lawyer-slider .kps-rule{margin:16px 0 16px}
+#khai-lawyer-slider .kls-role{font:700 clamp(13px,1.15vw,17px)/1.35 "Lato",Arial,sans-serif;text-transform:uppercase;letter-spacing:.4px}
+#khai-lawyer-slider .kls-cred{margin-top:6px;font:400 clamp(13px,1vw,15px)/1.4 "Lato",Arial,sans-serif;opacity:.85}
+@media (max-width:1024px){#khai-lawyer-slider .kls-slide{flex-basis:50%}}
+@media (max-width:480px){#khai-lawyer-slider .kls-slide{flex-basis:86%}#khai-lawyer-slider .kls-name{font-size:28px}#khai-lawyer-slider .kls-role{font-size:14px}}
+</style>
 </head>
 
 <body data-rsssl="1" class="home page-template-default page page-id-3928 _masterslider _msp_version_3.4.5">
@@ -819,114 +834,55 @@ setTimeout(gone,1600);})();</script>
                         </div>
                         <div class="clear"></div>
                     </section>
-                    <section id="content-section-6">
-                        <div class="gdlr-color-wrapper gdlr-show-all no-skin" style="background-color: #ffffff; padding-top: 70px; padding-bottom: 0px;">
-                            <div class="container">
-                                <div class="attorney-item-wrapper">
-                                    <div class="gdlr-item-title-wrapper gdlr-item pos-center gdlr-nav-container">
-                                        <div class="gdlr-item-title-head">
-                                            <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border">Meet Our Lawyers</h3>
-                                            <div class="gdlr-item-title-nav">
-                                            
-                                            </div>
-                                        </div>
-                                        <div class="gdlr-item-title-divider"></div>
-                                    </div>
-                                    <div class="attorney-item-holder">
-                                        <div class="gdlr-attorney-carousel-item gdlr-item">
-    <div class="attorney-item-holder">
-
-        <!-- Attorney 1 -->
-        <div class="gdlr-item gdlr-attorney-item">
-            <div class="gdlr-attorney-thumbnail">
-                <a href="upload/attorney-1-400x300.png" data-rel="fancybox">
-                    <img src="upload/attorney-1-400x300.png" alt="" width="400" height="300" />
-                </a>
-            </div>
-
-            <div class="attorney-content-wrapper">
-                <h3 class="attorney-title gdlr-title">
-                    <a href="singleattorney-khai.html">Khairul Anam</a>
-                </h3>
-
-                <div class="attorney-position">
-                    S.H., S.Tr.Par., M.Par., M.H.
-                </div>
-
-                <div class="attorney-excerpt">
-                    Khairul Anam is the Managing Partner and founder of KHAI & Partners, and a member of DPC Peradi Balikpapan, the Balikpa...
-                    <div class="clear"></div>
-                    <a href="singleattorney-khai.html" class="excerpt-read-more">Read Profile</a>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Attorney 2 -->
-        <div class="gdlr-item gdlr-attorney-item">
-            <div class="gdlr-attorney-thumbnail">
-                <a href="upload/attorney-2-400x300.png" data-rel="fancybox">
-                    <img src="upload/attorney-2-400x300.png" alt="" width="400" height="300" />
-                </a>
-            </div>
-
-            <div class="attorney-content-wrapper">
-                <h3 class="attorney-title gdlr-title">
-                    <a href="singleattorney-joko.html">Joko Ponconowo</a>
-                </h3>
-
-                <div class="attorney-position">
-                    S.H., M.H., C.R.A., C.T.L.
-                </div>
-
-                <div class="attorney-excerpt">
-                    Accomplished Indonesian legal professional with expertise in corporate law, commercial litigation, bankruptcy and insolvency (PKPU), contract...
-                    <div class="clear"></div>
-                    <a href="singleattorney-joko.html" class="excerpt-read-more">Read Profile</a>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Attorney 3 -->
-        <div class="gdlr-item gdlr-attorney-item">
-            <div class="gdlr-attorney-thumbnail">
-                <a href="upload/attorney-3-400x300.png" data-rel="fancybox">
-                    <img src="upload/attorney-3-400x300.png" alt="" width="400" height="300" />
-                </a>
-            </div>
-
-            <div class="attorney-content-wrapper">
-                <h3 class="attorney-title gdlr-title">
-                    <a href="singleattorney-everton.html">Everton Hutabarat</a>
-                </h3>
-
-                <div class="attorney-position">
-                    S.H., M.H.
-                </div>
-
-                <div class="attorney-excerpt">
-                    Indonesian 
-    advocate and legal professional based in Balikpapan, 
-    East Kalimantan, with more than 13 years of experience 
-    in business...
-                    <div class="clear"></div>
-                    <a href="singleattorney-everton.html" class="excerpt-read-more">Read Profile</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
+<section id="content-section-6">
+<div id="khai-lawyer-slider" class="kps kls" aria-roledescription="carousel" aria-label="Our lawyers">
+  <div class="kps-band"><h2>Meet Our Lawyers</h2></div>
+  <div class="kps-viewport">
+    <button type="button" class="kps-nav kps-prev" aria-label="Previous lawyer"><svg viewBox="0 0 24 48" aria-hidden="true"><path d="M18 4 4 24l14 20" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+    <ul class="kps-track">
+      <li class="kls-slide"><a href="singleattorney-khai.html"><img src="upload/pa/lw1.jpg" alt="Khairul Anam" width="720" height="900" loading="lazy" decoding="async"><span class="kls-txt"><span class="kls-name">Khairul Anam</span><span class="kps-rule"></span><span class="kls-role">Managing Partner</span><span class="kls-cred">S.H., S.Tr.Par., M.Par., M.H.</span></span></a></li>
+      <li class="kls-slide"><a href="singleattorney-joko.html"><img src="upload/pa/lw2.jpg" alt="Joko Ponconowo" width="720" height="900" loading="lazy" decoding="async"><span class="kls-txt"><span class="kls-name">Joko Ponconowo</span><span class="kps-rule"></span><span class="kls-role">Legal Consultant · Litigation Counsel</span><span class="kls-cred">S.H., M.H., C.R.A., C.T.L.</span></span></a></li>
+      <li class="kls-slide"><a href="singleattorney-everton.html"><img src="upload/pa/lw3.jpg" alt="Everton Jeffry Hutabarat" width="720" height="900" loading="lazy" decoding="async"><span class="kls-txt"><span class="kls-name">Everton Jeffry Hutabarat</span><span class="kps-rule"></span><span class="kls-role">Licensed Advocate · Certified Tax Lawyer</span><span class="kls-cred">S.H., M.H.</span></span></a></li>
+      <li class="kls-slide" aria-hidden="true" data-clone><a href="singleattorney-khai.html" tabindex="-1"><img src="upload/pa/lw1.jpg" alt="Khairul Anam" width="720" height="900" loading="lazy" decoding="async"><span class="kls-txt"><span class="kls-name">Khairul Anam</span><span class="kps-rule"></span><span class="kls-role">Managing Partner</span><span class="kls-cred">S.H., S.Tr.Par., M.Par., M.H.</span></span></a></li>
+      <li class="kls-slide" aria-hidden="true" data-clone><a href="singleattorney-joko.html" tabindex="-1"><img src="upload/pa/lw2.jpg" alt="Joko Ponconowo" width="720" height="900" loading="lazy" decoding="async"><span class="kls-txt"><span class="kls-name">Joko Ponconowo</span><span class="kps-rule"></span><span class="kls-role">Legal Consultant · Litigation Counsel</span><span class="kls-cred">S.H., M.H., C.R.A., C.T.L.</span></span></a></li>
+      <li class="kls-slide" aria-hidden="true" data-clone><a href="singleattorney-everton.html" tabindex="-1"><img src="upload/pa/lw3.jpg" alt="Everton Jeffry Hutabarat" width="720" height="900" loading="lazy" decoding="async"><span class="kls-txt"><span class="kls-name">Everton Jeffry Hutabarat</span><span class="kps-rule"></span><span class="kls-role">Licensed Advocate · Certified Tax Lawyer</span><span class="kls-cred">S.H., M.H.</span></span></a></li>
+    </ul>
+    <button type="button" class="kps-nav kps-next" aria-label="Next lawyer"><svg viewBox="0 0 24 48" aria-hidden="true"><path d="m6 4 14 20L6 44" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+  </div>
+  <p class="kps-all"><a href="attorney-4-columns.html">View All Lawyers</a></p>
 </div>
-                                        <div class="clear"></div>
-                                    </div>
-                                </div>
-                                <div class="clear"></div>
-                                <div class="clear"></div>
-                            </div>
-                        </div>
-                        <div class="clear"></div>
-                    </section>
+<script>
+(function () {
+  var root = document.getElementById("khai-lawyer-slider");
+  if (!root) return;
+  var track = root.querySelector(".kps-track");
+  var count = track.querySelectorAll(".kls-slide:not([data-clone])").length;
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function step() { return track.querySelector(".kls-slide").getBoundingClientRect().width; }
+  function jump(x) {
+    track.style.scrollBehavior = "auto"; track.scrollLeft = x;
+    void track.offsetWidth; track.style.scrollBehavior = "";
+  }
+  function go(dir) {
+    var s = step(), loop = count * s;
+    if (dir > 0 && track.scrollLeft >= loop - 2) jump(track.scrollLeft - loop);
+    if (dir < 0 && track.scrollLeft <= 2) jump(loop);
+    track.scrollBy({ left: dir * s });
+  }
+  root.querySelector(".kps-prev").addEventListener("click", function () { go(-1); });
+  root.querySelector(".kps-next").addEventListener("click", function () { go(1); });
+  if (reduce) return;
+  var paused = false;
+  ["mouseenter", "focusin", "touchstart", "pointerdown"].forEach(function (e) {
+    root.addEventListener(e, function () { paused = true; }, { passive: true });
+  });
+  ["mouseleave", "focusout"].forEach(function (e) {
+    root.addEventListener(e, function () { paused = false; });
+  });
+  setInterval(function () { if (!paused && !document.hidden) go(1); }, 4500);
+})();
+</script>
+</section>
                    <style>
     #content-section-7 .khai-contact-photo,
     #content-section-7 .khai-contact-photo .gdlr-image-frame-item,
