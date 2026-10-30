@@ -235,6 +235,17 @@
 @media (max-width:1024px){#khai-lawyer-slider .kls-slide{flex-basis:50%}}
 @media (max-width:480px){#khai-lawyer-slider .kls-slide{flex-basis:86%}#khai-lawyer-slider .kls-name{font-size:28px}#khai-lawyer-slider .kls-role{font-size:14px}}
 </style>
+<style id="khai-pa-x-style">
+#khai-pa-slider .kps-txt{z-index:3}
+#khai-pa-slider .kps-x{position:absolute;left:50%;top:50%;z-index:2;width:58%;aspect-ratio:1/1;transform:translate(-50%,-50%);pointer-events:none}
+#khai-pa-slider .kps-x:before,#khai-pa-slider .kps-x:after{content:"";position:absolute;left:50%;top:50%;width:141.4%;height:1px;background:rgba(255,255,255,.9);transform:translate(-50%,-50%) rotate(45deg) scaleX(0);transition:transform .75s cubic-bezier(.2,.7,.2,1)}
+#khai-pa-slider .kps-x:after{transform:translate(-50%,-50%) rotate(-45deg) scaleX(0);transition-delay:.12s}
+#khai-pa-slider .kps-kicker,#khai-pa-slider .kps-rule{transition:transform .6s ease,opacity .6s ease}
+#khai-pa-slider .kps-slide a:hover .kps-x:before,#khai-pa-slider .kps-slide a:focus-visible .kps-x:before,#khai-pa-slider .kps-slide.is-active .kps-x:before{transform:translate(-50%,-50%) rotate(45deg) scaleX(1)}
+#khai-pa-slider .kps-slide a:hover .kps-x:after,#khai-pa-slider .kps-slide a:focus-visible .kps-x:after,#khai-pa-slider .kps-slide.is-active .kps-x:after{transform:translate(-50%,-50%) rotate(-45deg) scaleX(1)}
+#khai-pa-slider .kps-slide a:hover .kps-rule,#khai-pa-slider .kps-slide a:focus-visible .kps-rule,#khai-pa-slider .kps-slide.is-active .kps-rule{transform:scaleX(.35);opacity:.6}
+@media (prefers-reduced-motion:reduce){#khai-pa-slider .kps-x:before,#khai-pa-slider .kps-x:after,#khai-pa-slider .kps-rule{transition:none}}
+</style>
 </head>
 
 <body data-rsssl="1" class="home page-template-default page page-id-3928 _masterslider _msp_version_3.4.5">
@@ -770,21 +781,21 @@ setTimeout(gone,1600);})();</script>
   <div class="kps-viewport">
     <button type="button" class="kps-nav kps-prev" aria-label="Previous practice areas"><svg viewBox="0 0 24 48" aria-hidden="true"><path d="M18 4 4 24l14 20" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
     <ul class="kps-track">
-      <li class="kps-slide"><a href="single-practice1.html"><img src="upload/pa/pa1.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-txt"><span class="kps-kicker">Practice Area</span><span class="kps-rule"></span><span class="kps-title">Litigation &amp; Dispute Resolution</span></span></a></li>
-      <li class="kps-slide"><a href="single-practice4.html"><img src="upload/pa/pa4.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-txt"><span class="kps-kicker">Practice Area</span><span class="kps-rule"></span><span class="kps-title">Corporate &amp; Commercial Law</span></span></a></li>
-      <li class="kps-slide"><a href="single-practice2.html"><img src="upload/pa/pa2.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-txt"><span class="kps-kicker">Practice Area</span><span class="kps-rule"></span><span class="kps-title">Criminal Law</span></span></a></li>
-      <li class="kps-slide"><a href="single-practice11.html"><img src="upload/pa/pa11.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-txt"><span class="kps-kicker">Practice Area</span><span class="kps-rule"></span><span class="kps-title">Maritime &amp; Shipping Law</span></span></a></li>
-      <li class="kps-slide"><a href="single-practice8.html"><img src="upload/pa/pa8.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-txt"><span class="kps-kicker">Practice Area</span><span class="kps-rule"></span><span class="kps-title">Employment Law</span></span></a></li>
-      <li class="kps-slide"><a href="single-practice9.html"><img src="upload/pa/pa9.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-txt"><span class="kps-kicker">Practice Area</span><span class="kps-rule"></span><span class="kps-title">Property &amp; Land Law</span></span></a></li>
-      <li class="kps-slide"><a href="single-practice5.html"><img src="upload/pa/pa5.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-txt"><span class="kps-kicker">Practice Area</span><span class="kps-rule"></span><span class="kps-title">Banking &amp; Finance Law</span></span></a></li>
-      <li class="kps-slide"><a href="single-practice7.html"><img src="upload/pa/pa7.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-txt"><span class="kps-kicker">Practice Area</span><span class="kps-rule"></span><span class="kps-title">Bankruptcy &amp; Insolvency</span></span></a></li>
-      <li class="kps-slide"><a href="single-practice10.html"><img src="upload/pa/pa10.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-txt"><span class="kps-kicker">Practice Area</span><span class="kps-rule"></span><span class="kps-title">Natural Resources, Mining &amp; Energy Law</span></span></a></li>
-      <li class="kps-slide"><a href="single-practice12.html"><img src="upload/pa/pa12.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-txt"><span class="kps-kicker">Practice Area</span><span class="kps-rule"></span><span class="kps-title">Administrative &amp; Regulatory Law</span></span></a></li>
-      <li class="kps-slide"><a href="single-practice13.html"><img src="upload/pa/pa13.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-txt"><span class="kps-kicker">Practice Area</span><span class="kps-rule"></span><span class="kps-title">Tax Law</span></span></a></li>
-      <li class="kps-slide"><a href="single-practice14.html"><img src="upload/pa/pa14.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-txt"><span class="kps-kicker">Practice Area</span><span class="kps-rule"></span><span class="kps-title">Civil Law</span></span></a></li>
-      <li class="kps-slide"><a href="single-practice15.html"><img src="upload/pa/pa15.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-txt"><span class="kps-kicker">Practice Area</span><span class="kps-rule"></span><span class="kps-title">Family &amp; Inheritance Law</span></span></a></li>
-      <li class="kps-slide"><a href="single-practice16.html"><img src="upload/pa/pa16.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-txt"><span class="kps-kicker">Practice Area</span><span class="kps-rule"></span><span class="kps-title">Intellectual Property Law</span></span></a></li>
-      <li class="kps-slide"><a href="single-practice3.html"><img src="upload/pa/pa3.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-txt"><span class="kps-kicker">Practice Area</span><span class="kps-rule"></span><span class="kps-title">Digital Crime &amp; Cyber Law</span></span></a></li>
+      <li class="kps-slide"><a href="single-practice1.html"><img src="upload/pa/pa1.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-x" aria-hidden="true"></span><span class="kps-txt"><span class="kps-kicker">Practice Area</span><span class="kps-rule"></span><span class="kps-title">Litigation &amp; Dispute Resolution</span></span></a></li>
+      <li class="kps-slide"><a href="single-practice4.html"><img src="upload/pa/pa4.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-x" aria-hidden="true"></span><span class="kps-txt"><span class="kps-kicker">Practice Area</span><span class="kps-rule"></span><span class="kps-title">Corporate &amp; Commercial Law</span></span></a></li>
+      <li class="kps-slide"><a href="single-practice2.html"><img src="upload/pa/pa2.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-x" aria-hidden="true"></span><span class="kps-txt"><span class="kps-kicker">Practice Area</span><span class="kps-rule"></span><span class="kps-title">Criminal Law</span></span></a></li>
+      <li class="kps-slide"><a href="single-practice11.html"><img src="upload/pa/pa11.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-x" aria-hidden="true"></span><span class="kps-txt"><span class="kps-kicker">Practice Area</span><span class="kps-rule"></span><span class="kps-title">Maritime &amp; Shipping Law</span></span></a></li>
+      <li class="kps-slide"><a href="single-practice8.html"><img src="upload/pa/pa8.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-x" aria-hidden="true"></span><span class="kps-txt"><span class="kps-kicker">Practice Area</span><span class="kps-rule"></span><span class="kps-title">Employment Law</span></span></a></li>
+      <li class="kps-slide"><a href="single-practice9.html"><img src="upload/pa/pa9.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-x" aria-hidden="true"></span><span class="kps-txt"><span class="kps-kicker">Practice Area</span><span class="kps-rule"></span><span class="kps-title">Property &amp; Land Law</span></span></a></li>
+      <li class="kps-slide"><a href="single-practice5.html"><img src="upload/pa/pa5.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-x" aria-hidden="true"></span><span class="kps-txt"><span class="kps-kicker">Practice Area</span><span class="kps-rule"></span><span class="kps-title">Banking &amp; Finance Law</span></span></a></li>
+      <li class="kps-slide"><a href="single-practice7.html"><img src="upload/pa/pa7.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-x" aria-hidden="true"></span><span class="kps-txt"><span class="kps-kicker">Practice Area</span><span class="kps-rule"></span><span class="kps-title">Bankruptcy &amp; Insolvency</span></span></a></li>
+      <li class="kps-slide"><a href="single-practice10.html"><img src="upload/pa/pa10.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-x" aria-hidden="true"></span><span class="kps-txt"><span class="kps-kicker">Practice Area</span><span class="kps-rule"></span><span class="kps-title">Natural Resources, Mining &amp; Energy Law</span></span></a></li>
+      <li class="kps-slide"><a href="single-practice12.html"><img src="upload/pa/pa12.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-x" aria-hidden="true"></span><span class="kps-txt"><span class="kps-kicker">Practice Area</span><span class="kps-rule"></span><span class="kps-title">Administrative &amp; Regulatory Law</span></span></a></li>
+      <li class="kps-slide"><a href="single-practice13.html"><img src="upload/pa/pa13.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-x" aria-hidden="true"></span><span class="kps-txt"><span class="kps-kicker">Practice Area</span><span class="kps-rule"></span><span class="kps-title">Tax Law</span></span></a></li>
+      <li class="kps-slide"><a href="single-practice14.html"><img src="upload/pa/pa14.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-x" aria-hidden="true"></span><span class="kps-txt"><span class="kps-kicker">Practice Area</span><span class="kps-rule"></span><span class="kps-title">Civil Law</span></span></a></li>
+      <li class="kps-slide"><a href="single-practice15.html"><img src="upload/pa/pa15.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-x" aria-hidden="true"></span><span class="kps-txt"><span class="kps-kicker">Practice Area</span><span class="kps-rule"></span><span class="kps-title">Family &amp; Inheritance Law</span></span></a></li>
+      <li class="kps-slide"><a href="single-practice16.html"><img src="upload/pa/pa16.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-x" aria-hidden="true"></span><span class="kps-txt"><span class="kps-kicker">Practice Area</span><span class="kps-rule"></span><span class="kps-title">Intellectual Property Law</span></span></a></li>
+      <li class="kps-slide"><a href="single-practice3.html"><img src="upload/pa/pa3.jpg" alt="" width="720" height="782" loading="lazy" decoding="async"><span class="kps-x" aria-hidden="true"></span><span class="kps-txt"><span class="kps-kicker">Practice Area</span><span class="kps-rule"></span><span class="kps-title">Digital Crime &amp; Cyber Law</span></span></a></li>
     </ul>
     <button type="button" class="kps-nav kps-next" aria-label="Next practice areas"><svg viewBox="0 0 24 48" aria-hidden="true"><path d="m6 4 14 20L6 44" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
   </div>
@@ -819,6 +830,17 @@ setTimeout(gone,1600);})();</script>
   setInterval(function () {
     if (!paused && !document.hidden) go(1);
   }, 4500);
+})();
+</script>
+<script>
+(function () {
+  var root = document.getElementById("khai-pa-slider");
+  if (!root || !("IntersectionObserver" in window)) return;
+  if (!window.matchMedia("(hover: none)").matches) return;
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { e.target.classList.toggle("is-active", e.intersectionRatio > 0.8); });
+  }, { root: root.querySelector(".kps-track"), threshold: [0, 0.8, 1] });
+  root.querySelectorAll(".kps-slide").forEach(function (s) { io.observe(s); });
 })();
 </script>
                     </section>
