@@ -814,30 +814,51 @@ setTimeout(gone,1600);})();</script>
   var root = document.getElementById("khai-pa-slider");
   if (!root) return;
   var track = root.querySelector(".kps-track");
+  var originals = Array.prototype.slice.call(track.children);
+  originals.forEach(function (li) {
+    var c = li.cloneNode(true);
+    c.setAttribute("aria-hidden", "true");
+    c.querySelectorAll("a").forEach(function (x) { x.setAttribute("tabindex", "-1"); });
+    track.appendChild(c);
+  });
+  track.style.scrollSnapType = "none";
+  track.style.scrollBehavior = "auto";
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  function step() {
-    var s = track.querySelector(".kps-slide");
-    return s ? s.getBoundingClientRect().width : track.clientWidth;
+  var pos = 0, paused = false, resumeT = null, last = null, glide = null;
+  function half() { return track.scrollWidth / 2; }
+  function slideW() { return originals[0].getBoundingClientRect().width; }
+  function speed() { return slideW() / 4; }              /* px per second: one picture every 4 s */
+  function wrap() { var h = half(); if (pos >= h) pos -= h; if (pos < 0) pos += h; }
+  function frame(t) {
+    if (last === null) last = t;
+    var dt = Math.min(0.1, (t - last) / 1000); last = t;
+    if (glide) {
+      var k = Math.min(1, (t - glide.t0) / 450), e = 1 - Math.pow(1 - k, 3);
+      pos = glide.from + (glide.to - glide.from) * e;
+      if (k >= 1) glide = null;
+    } else if (!paused && !reduce && !document.hidden) {
+      pos += speed() * dt;
+    }
+    wrap(); track.scrollLeft = pos;
+    requestAnimationFrame(frame);
   }
-  function go(dir) {
-    var max = track.scrollWidth - track.clientWidth - 2;
-    if (dir > 0 && track.scrollLeft >= max) { track.scrollTo({ left: 0 }); return; }
-    if (dir < 0 && track.scrollLeft <= 2) { track.scrollTo({ left: track.scrollWidth }); return; }
-    track.scrollBy({ left: dir * step() });
+  function nudge(dir) {
+    var w = slideW(), target = (Math.round(pos / w) + dir) * w;
+    glide = { from: pos, to: target, t0: performance.now() };
   }
-  root.querySelector(".kps-prev").addEventListener("click", function () { go(-1); });
-  root.querySelector(".kps-next").addEventListener("click", function () { go(1); });
-  if (reduce) return;
-  var paused = false;
-  ["mouseenter", "focusin", "touchstart", "pointerdown"].forEach(function (e) {
-    root.addEventListener(e, function () { paused = true; }, { passive: true });
-  });
-  ["mouseleave", "focusout"].forEach(function (e) {
-    root.addEventListener(e, function () { paused = false; });
-  });
-  setInterval(function () {
-    if (!paused && !document.hidden) go(1);
-  }, 4500);
+  root.querySelector(".kps-prev").addEventListener("click", function () { nudge(-1); });
+  root.querySelector(".kps-next").addEventListener("click", function () { nudge(1); });
+  root.addEventListener("mouseenter", function () { paused = true; });
+  root.addEventListener("mouseleave", function () { paused = false; });
+  root.addEventListener("focusin", function () { paused = true; });
+  root.addEventListener("focusout", function () { paused = false; });
+  track.addEventListener("touchstart", function () { paused = true; clearTimeout(resumeT); }, { passive: true });
+  track.addEventListener("touchend", function () {
+    clearTimeout(resumeT);
+    resumeT = setTimeout(function () { pos = track.scrollLeft; paused = false; }, 2500);
+  }, { passive: true });
+  track.addEventListener("scroll", function () { if (paused && !glide) pos = track.scrollLeft; }, { passive: true });
+  requestAnimationFrame(frame);
 })();
 </script>
 <script>
