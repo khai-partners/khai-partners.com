@@ -1,0 +1,40 @@
+/* Khai & Partners — three image panels with hover frame + caption */
+.khai-panels{display:flex;width:100%;margin:0;padding:0;background:#14181f;font-family:"Open Sans",Arial,sans-serif}
+.khai-panel{position:relative;flex:1 1 33.333%;height:560px;overflow:hidden;display:block;color:#fff !important;text-decoration:none !important}
+.khai-panel-img{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1);transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.khai-panel::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(14,20,32,.55) 0%,rgba(14,20,32,.25) 45%,rgba(14,20,32,.55) 100%);transition:background .5s ease}
+.khai-panel-frame{position:absolute;inset:28px;z-index:2;border:1px solid rgba(255,255,255,.9);opacity:0;transform:scale(1.04);transition:opacity .45s ease,transform .6s cubic-bezier(.2,.7,.2,1)}
+.khai-panel-body{position:absolute;inset:28px;z-index:3;display:flex;flex-direction:column;align-items:center;padding:56px 36px 40px;text-align:center}
+.khai-panel-title{margin:0;font-family:"Open Sans",Arial,sans-serif;font-size:32px;line-height:1.2;font-weight:700;color:#fff;letter-spacing:.5px;text-shadow:0 2px 14px rgba(0,0,0,.45)}
+.khai-panel-rule{display:block;width:44px;height:2px;margin:18px auto 0;background:#c9ad7f;transition:width .5s ease}
+.khai-panel-caption{margin-top:22px;max-width:360px;opacity:0;transform:translateY(16px);transition:opacity .45s ease .08s,transform .55s cubic-bezier(.2,.7,.2,1) .08s}
+.khai-panel-caption p{margin:0 0 6px;font-size:19px;line-height:1.55;font-weight:600;color:#fff}
+.khai-panel-caption .khai-panel-cta{display:inline-block;margin-top:22px;font-size:12px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#e4cfa6;border-bottom:1px solid rgba(228,207,166,.6);padding-bottom:4px}
+
+.khai-panel:hover .khai-panel-img,.khai-panel:focus-visible .khai-panel-img{transform:scale(1.06)}
+.khai-panel:hover::before,.khai-panel:focus-visible::before{background:rgba(42,74,110,.62)}
+.khai-panel:hover .khai-panel-frame,.khai-panel:focus-visible .khai-panel-frame{opacity:1;transform:scale(1)}
+.khai-panel:hover .khai-panel-caption,.khai-panel:focus-visible .khai-panel-caption{opacity:1;transform:none}
+.khai-panel:hover .khai-panel-rule,.khai-panel:focus-visible .khai-panel-rule{width:80px}
+.khai-panel:focus-visible{outline:2px solid #c9ad7f;outline-offset:-2px}
+
+@media (max-width:999px){
+  .khai-panel{height:480px}
+  .khai-panel-title{font-size:26px}
+  .khai-panel-caption p{font-size:16px}
+  .khai-panel-body{padding:44px 22px 30px}
+}
+/* Phones/touch: no hover, so show frame + caption always and stack panels */
+@media (max-width:767px){
+  .khai-panels{flex-direction:column}
+  .khai-panel{flex:none;height:420px}
+}
+@media (max-width:767px),(hover:none){
+  .khai-panel::before{background:rgba(20,32,50,.6)}
+  .khai-panel-frame{opacity:1;transform:none;inset:18px}
+  .khai-panel-body{inset:18px}
+  .khai-panel-caption{opacity:1;transform:none}
+}
+@media (prefers-reduced-motion:reduce){
+  .khai-panel *, .khai-panel::before{transition:none !important}
+}
