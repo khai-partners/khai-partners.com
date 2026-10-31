@@ -797,6 +797,11 @@ setTimeout(gone,1600);})();</script>
                                 </span>
                             </a>
                         </div>
+                        <div class="khai-panels-dots" aria-hidden="true"><span class="is-active"></span><span></span><span></span></div>
+                        <script>
+                        (function(){var t=document.querySelector('#content-section-panels .khai-panels'),d=document.querySelectorAll('#content-section-panels .khai-panels-dots span');if(!t||!d.length)return;
+                        t.addEventListener('scroll',function(){var p=t.querySelectorAll('.khai-panel'),c=t.scrollLeft+t.clientWidth/2,b=0,m=1e9;for(var i=0;i<p.length;i++){var x=Math.abs(p[i].offsetLeft-t.offsetLeft+p[i].offsetWidth/2-c);if(x<m){m=x;b=i}}for(var j=0;j<d.length;j++)d[j].className=j===b?'is-active':''},{passive:true});})();
+                        </script>
                     </section>
                     <section id="content-section-3">
                         <div class="gdlr-parallax-wrapper gdlr-background-image gdlr-show-all gdlr-skin-dark-skin" id="gdlr-parallax-wrapper-1" data-bgspeed="0.1" style="background-image: url('upload/bg-homepage-service.jpg'); padding-bottom: 0px;">

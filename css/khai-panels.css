@@ -24,10 +24,16 @@
   .khai-panel-caption p{font-size:16px}
   .khai-panel-body{padding:44px 22px 30px}
 }
-/* Phones/touch: no hover, so show frame + caption always and stack panels */
+/* Phones: swipe sideways, one panel at a time (next one peeks in) */
+.khai-panels-dots{display:none}
 @media (max-width:767px){
-  .khai-panels{flex-direction:column}
-  .khai-panel{flex:none;height:420px}
+  .khai-panels{overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;gap:10px;padding:0 0 0 16px}
+  .khai-panels::-webkit-scrollbar{display:none}
+  .khai-panels::after{content:"";flex:0 0 6px}
+  .khai-panel{flex:0 0 84%;height:440px;scroll-snap-align:center}
+  .khai-panels-dots{display:flex;justify-content:center;gap:10px;padding:16px 0 18px;background:#14181f}
+  .khai-panels-dots span{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.35);transition:background .3s,transform .3s}
+  .khai-panels-dots span.is-active{background:#c9ad7f;transform:scale(1.25)}
 }
 @media (max-width:767px),(hover:none){
   .khai-panel::before{background:rgba(20,32,50,.6)}
