@@ -1,6 +1,6 @@
 /* Khai & Partners — three image panels with hover frame + caption */
 .khai-panels{display:flex;width:100%;margin:0;padding:0;background:#14181f;font-family:"Open Sans",Arial,sans-serif}
-.khai-panel{position:relative;flex:1 1 33.333%;height:560px;overflow:hidden;display:block;color:#fff !important;text-decoration:none !important}
+.khai-panel{position:relative;flex:1 1 33.333%;height:373px;overflow:hidden;display:block;color:#fff !important;text-decoration:none !important}
 .khai-panel-img{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1);transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
 .khai-panel::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(14,20,32,.55) 0%,rgba(14,20,32,.25) 45%,rgba(14,20,32,.55) 100%);transition:background .5s ease}
 .khai-panel-frame{position:absolute;inset:28px;z-index:2;border:1px solid rgba(255,255,255,.9);opacity:0;transform:scale(1.04);transition:opacity .45s ease,transform .6s cubic-bezier(.2,.7,.2,1)}
@@ -19,7 +19,7 @@
 .khai-panel:focus-visible{outline:2px solid #c9ad7f;outline-offset:-2px}
 
 @media (max-width:999px){
-  .khai-panel{height:480px}
+  .khai-panel{height:320px}
   .khai-panel-title{font-size:26px}
   .khai-panel-caption p{font-size:16px}
   .khai-panel-body{padding:44px 22px 30px}
@@ -30,7 +30,7 @@
   .khai-panels{overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;gap:10px;padding:0 0 0 16px}
   .khai-panels::-webkit-scrollbar{display:none}
   .khai-panels::after{content:"";flex:0 0 6px}
-  .khai-panel{flex:0 0 84%;height:440px;scroll-snap-align:center}
+  .khai-panel{flex:0 0 84%;height:293px;scroll-snap-align:center}
   .khai-panels-dots{display:flex;justify-content:center;gap:10px;padding:16px 0 18px;background:#14181f}
   .khai-panels-dots span{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.35);transition:background .3s,transform .3s}
   .khai-panels-dots span.is-active{background:#c9ad7f;transform:scale(1.25)}
@@ -43,4 +43,26 @@
 }
 @media (prefers-reduced-motion:reduce){
   .khai-panel *, .khai-panel::before{transition:none !important}
+}
+
+/* Compact panels (height reduced by one third) */
+.khai-panel-frame{inset:20px}
+.khai-panel-body{inset:20px;padding:34px 28px 24px}
+.khai-panel-title{font-size:26px}
+.khai-panel-rule{margin-top:12px}
+.khai-panel-caption{margin-top:14px;max-width:330px}
+.khai-panel-caption p{font-size:15px;line-height:1.5;margin-bottom:4px}
+.khai-panel-caption .khai-panel-cta{margin-top:12px;font-size:11px}
+@media (max-width:999px){
+  .khai-panel-body{padding:26px 18px 18px}
+  .khai-panel-title{font-size:22px}
+  .khai-panel-caption p{font-size:14px}
+}
+@media (max-width:767px),(hover:none){
+  .khai-panel-frame,.khai-panel-body{inset:14px}
+  .khai-panel-body{padding:22px 16px 14px}
+  .khai-panel-title{font-size:21px}
+  .khai-panel-caption{margin-top:10px}
+  .khai-panel-caption p{font-size:13.5px;line-height:1.45}
+  .khai-panel-caption .khai-panel-cta{margin-top:8px}
 }
