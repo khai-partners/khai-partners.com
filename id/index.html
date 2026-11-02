@@ -295,6 +295,11 @@
 .footer-wrapper .khai-foot-contact a{color:inherit;text-decoration:none}
 .footer-wrapper .khai-foot-contact a:hover{color:#d9c39b}
 </style>
+<style id="khai-marquee-style">
+#content-section-panels .khai-panels{overflow:hidden}
+#content-section-panels .khai-panel{flex:0 0 33.3333%}
+@media (max-width:767px){#content-section-panels .khai-panels{overflow-x:auto;padding:0;gap:10px}#content-section-panels .khai-panel{flex:0 0 84%}#content-section-panels .khai-panels::after{display:none}}
+</style>
 </head>
 
 <body data-rsssl="1" class="home page-template-default page page-id-3928 _masterslider _msp_version_3.4.5">
@@ -830,10 +835,7 @@ setTimeout(gone,1600);})();</script>
                             </a>
                         </div>
                         <div class="khai-panels-dots" aria-hidden="true"><span class="is-active"></span><span></span><span></span></div>
-                        <script>
-                        (function(){var t=document.querySelector('#content-section-panels .khai-panels'),d=document.querySelectorAll('#content-section-panels .khai-panels-dots span');if(!t||!d.length)return;
-                        t.addEventListener('scroll',function(){var p=t.querySelectorAll('.khai-panel'),c=t.scrollLeft+t.clientWidth/2,b=0,m=1e9;for(var i=0;i<p.length;i++){var x=Math.abs(p[i].offsetLeft-t.offsetLeft+p[i].offsetWidth/2-c);if(x<m){m=x;b=i}}for(var j=0;j<d.length;j++)d[j].className=j===b?'is-active':''},{passive:true});})();
-                        </script>
+                        
                     </section>
                     <section id="content-section-3">
                         <div class="gdlr-parallax-wrapper gdlr-background-image gdlr-show-all gdlr-skin-dark-skin" id="gdlr-parallax-wrapper-1" data-bgspeed="0.1" style="background-image: url('../upload/bg-homepage-service.jpg'); padding-bottom: 0px;">
@@ -894,58 +896,7 @@ setTimeout(gone,1600);})();</script>
   </div>
   <p class="kps-all"><a href="practice-areas-modern-4-columns.html">Lihat Semua Bidang Praktik</a></p>
 </div>
-<script>
-(function () {
-  var root = document.getElementById("khai-pa-slider");
-  if (!root) return;
-  var track = root.querySelector(".kps-track");
-  var originals = Array.prototype.slice.call(track.children);
-  originals.forEach(function (li) {
-    var c = li.cloneNode(true);
-    c.setAttribute("aria-hidden", "true");
-    c.querySelectorAll("a").forEach(function (x) { x.setAttribute("tabindex", "-1"); });
-    track.appendChild(c);
-  });
-  track.style.scrollSnapType = "none";
-  track.style.scrollBehavior = "auto";
-  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var pos = 0, paused = false, resumeT = null, last = null, glide = null;
-  function half() { return track.scrollWidth / 2; }
-  function slideW() { return originals[0].getBoundingClientRect().width; }
-  function speed() { return slideW() / 4; }              /* px per second: one picture every 4 s */
-  function wrap() { var h = half(); if (pos >= h) pos -= h; if (pos < 0) pos += h; }
-  function frame(t) {
-    if (last === null) last = t;
-    var dt = Math.min(0.1, (t - last) / 1000); last = t;
-    if (glide) {
-      var k = Math.min(1, (t - glide.t0) / 450), e = 1 - Math.pow(1 - k, 3);
-      pos = glide.from + (glide.to - glide.from) * e;
-      if (k >= 1) glide = null;
-    } else if (!paused && !reduce && !document.hidden) {
-      pos += speed() * dt;
-    }
-    wrap(); track.scrollLeft = pos;
-    requestAnimationFrame(frame);
-  }
-  function nudge(dir) {
-    var w = slideW(), target = (Math.round(pos / w) + dir) * w;
-    glide = { from: pos, to: target, t0: performance.now() };
-  }
-  root.querySelector(".kps-prev").addEventListener("click", function () { nudge(-1); });
-  root.querySelector(".kps-next").addEventListener("click", function () { nudge(1); });
-  root.addEventListener("mouseenter", function () { paused = true; });
-  root.addEventListener("mouseleave", function () { paused = false; });
-  root.addEventListener("focusin", function () { paused = true; });
-  root.addEventListener("focusout", function () { paused = false; });
-  track.addEventListener("touchstart", function () { paused = true; clearTimeout(resumeT); }, { passive: true });
-  track.addEventListener("touchend", function () {
-    clearTimeout(resumeT);
-    resumeT = setTimeout(function () { pos = track.scrollLeft; paused = false; }, 2500);
-  }, { passive: true });
-  track.addEventListener("scroll", function () { if (paused && !glide) pos = track.scrollLeft; }, { passive: true });
-  requestAnimationFrame(frame);
-})();
-</script>
+
 <script>
 (function () {
   var root = document.getElementById("khai-pa-slider");
@@ -975,37 +926,7 @@ setTimeout(gone,1600);})();</script>
   </div>
   <p class="kps-all"><a href="attorney-4-columns.html">Lihat Semua Advokat</a></p>
 </div>
-<script>
-(function () {
-  var root = document.getElementById("khai-lawyer-slider");
-  if (!root) return;
-  var track = root.querySelector(".kps-track");
-  var count = track.querySelectorAll(".kls-slide:not([data-clone])").length;
-  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  function step() { return track.querySelector(".kls-slide").getBoundingClientRect().width; }
-  function jump(x) {
-    track.style.scrollBehavior = "auto"; track.scrollLeft = x;
-    void track.offsetWidth; track.style.scrollBehavior = "";
-  }
-  function go(dir) {
-    var s = step(), loop = count * s;
-    if (dir > 0 && track.scrollLeft >= loop - 2) jump(track.scrollLeft - loop);
-    if (dir < 0 && track.scrollLeft <= 2) jump(loop);
-    track.scrollBy({ left: dir * s });
-  }
-  root.querySelector(".kps-prev").addEventListener("click", function () { go(-1); });
-  root.querySelector(".kps-next").addEventListener("click", function () { go(1); });
-  if (reduce) return;
-  var paused = false;
-  ["mouseenter", "focusin", "touchstart", "pointerdown"].forEach(function (e) {
-    root.addEventListener(e, function () { paused = true; }, { passive: true });
-  });
-  ["mouseleave", "focusout"].forEach(function (e) {
-    root.addEventListener(e, function () { paused = false; });
-  });
-  setInterval(function () { if (!paused && !document.hidden) go(1); }, 4500);
-})();
-</script>
+
 </section>
                    <style>
     #content-section-7 .khai-contact-photo,
@@ -1430,5 +1351,66 @@ setTimeout(gone,1600);})();</script>
     </script>
 
 
+<script>
+/* Continuous sideways motion for the homepage sliders.
+   dir 1 = pictures travel to the left, dir -1 = to the right. */
+(function () {
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function marquee(o) {
+    var root = document.querySelector(o.root), track = root && root.querySelector(o.track);
+    if (!track) return;
+    var items = Array.prototype.filter.call(track.children, function (n) { return n.matches(o.item) && !n.hasAttribute("data-clone"); });
+    track.querySelectorAll("[data-clone]").forEach(function (n) { n.remove(); });
+    items.forEach(function (n) {
+      var c = n.cloneNode(true); c.setAttribute("data-clone", ""); c.setAttribute("aria-hidden", "true");
+      c.querySelectorAll("a").forEach(function (x) { x.setAttribute("tabindex", "-1"); });
+      if (c.matches("a")) c.setAttribute("tabindex", "-1");
+      track.appendChild(c);
+    });
+    track.style.scrollSnapType = "none"; track.style.scrollBehavior = "auto";
+    var pos = 0, paused = false, resumeT = null, last = null, glide = null, started = false;
+    function itemW() { return items[0].getBoundingClientRect().width + (parseFloat(getComputedStyle(track).columnGap) || 0); }
+    function half() { return itemW() * items.length; }
+    function wrap() { var h = half(); if (h <= 0) return; while (pos >= h) pos -= h; while (pos < 0) pos += h; }
+    function frame(t) {
+      if (last === null) last = t;
+      var dt = Math.min(0.1, (t - last) / 1000); last = t;
+      if (!started) { pos = o.dir < 0 ? half() : 0; started = true; }
+      if (glide) {
+        var k = Math.min(1, (t - glide.t0) / 450), e = 1 - Math.pow(1 - k, 3);
+        pos = glide.from + (glide.to - glide.from) * e; if (k >= 1) glide = null;
+      } else if (!paused && !reduce && !document.hidden) {
+        pos += o.dir * itemW() / o.secs * dt;
+      }
+      wrap(); track.scrollLeft = pos;
+      if (o.onMove) o.onMove(pos, itemW(), items.length);
+      requestAnimationFrame(frame);
+    }
+    function nudge(d) { var w = itemW(); glide = { from: pos, to: (Math.round(pos / w) + d) * w, t0: performance.now() }; }
+    var prev = root.querySelector(".kps-prev"), next = root.querySelector(".kps-next");
+    if (prev) prev.addEventListener("click", function () { nudge(-1); });
+    if (next) next.addEventListener("click", function () { nudge(1); });
+    root.addEventListener("mouseenter", function () { paused = true; });
+    root.addEventListener("mouseleave", function () { paused = false; });
+    root.addEventListener("focusin", function () { paused = true; });
+    root.addEventListener("focusout", function () { paused = false; });
+    track.addEventListener("touchstart", function () { paused = true; clearTimeout(resumeT); }, { passive: true });
+    track.addEventListener("touchend", function () {
+      clearTimeout(resumeT); resumeT = setTimeout(function () { pos = track.scrollLeft; paused = false; }, 2500);
+    }, { passive: true });
+    track.addEventListener("scroll", function () { if (paused && !glide) pos = track.scrollLeft; }, { passive: true });
+    requestAnimationFrame(frame);
+  }
+  var dots = document.querySelectorAll("#content-section-panels .khai-panels-dots span");
+  marquee({ root: "#content-section-panels", track: ".khai-panels", item: ".khai-panel", dir: 1, secs: 5,
+    onMove: function (pos, w, n) {
+      if (!dots.length) return;
+      var k = Math.round(pos / w) % n;
+      for (var j = 0; j < dots.length; j++) dots[j].className = j === k ? "is-active" : "";
+    } });
+  marquee({ root: "#khai-pa-slider", track: ".kps-track", item: ".kps-slide", dir: -1, secs: 4 });
+  marquee({ root: "#khai-lawyer-slider", track: ".kps-track", item: ".kls-slide", dir: 1, secs: 4 });
+})();
+</script>
 </body>
 </html>
